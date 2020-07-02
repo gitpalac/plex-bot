@@ -1,0 +1,8 @@
+Bugs
+
+boy.py
+    request
+        func accepts any second argument -- should only accept movie or tv-show
+
+    on_reaction_add
+        func does not send confirmation message to chat when request submission is made

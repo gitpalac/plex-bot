@@ -28,6 +28,8 @@ class MediaClient:
 
         self.content_type = kwargs.get('content_type', None)
         self.keywords = kwargs.get('keywords', None)
+        assert len(self.keywords) > 0
+
         print(f'Querying Media with keywords: {self.keywords}')
         query = ' '.join(self.keywords)
 

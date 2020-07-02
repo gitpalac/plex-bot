@@ -14,21 +14,20 @@ TOKEN = os.getenv('DISCORD_TOKEN')
 
 bot = commands.Bot(command_prefix='+')
 
-content_types = ('movie', 'tv-show')
+content_types = ['movie', 'tv-show']
+
 
 ## CHECKS
-
-def valid_request(ctx):
-    return ctx.args[1].lower() in content_types and len(ctx.args[1:]) > 0
-
+def check_request(ctx):
+    return ctx.args[0] in content_types
 
 ## COMMANDS
 
 @bot.command(name='request',
              description='Type this command to request content for Palac+',
-             help='Submits a request to Palac+.',
-             usage='{movie/tv-show} {title keywords}')
-# @commands.check(valid_request)
+             help='Plex requests',
+             usage='<movie/tv-show> [title keywords]')
+@commands.check(check_request)
 async def request(ctx, content_type, *args):
 
     content_type = content_type.lower()
@@ -39,10 +38,11 @@ async def request(ctx, content_type, *args):
                'reaction_count' : len(ctx.message.reactions),
                'created_at' : ctx.message.created_at,
                'edited_at' : ctx.message.edited_at,
-               'jump_url' : ctx.message.jump_url
+               'jump_url' : ctx.message.jump_url,
+               'created_by' : ctx.message.author
                }
     await ctx.message.add_reaction('👍')
-    response = f"""Thanks {ctx.author.display_name}.\nYour {content_type.strip('-')} selection was submitted ✅\n"""
+    response = f"""Request Accepted {ctx.author.display_name}.\n"""
     print(f'{ctx.author} added a request : {payload}')
 
     results = MediaClient(**payload)
@@ -51,7 +51,7 @@ async def request(ctx, content_type, *args):
             embed = discord.Embed(title=movie.title,
                                   description=movie.titleType,
                                   colour=discord.Colour.blue())
-            embed.set_footer(text="Delete this message to remove it from the queue.")
+            embed.set_footer(text="React to this message to approve/deny submission")
             embed.set_image(url=movie.image_url)
             embed.set_thumbnail(url="https://ia.media-imdb.com/images/M/MV5BMTczNjM0NDY0Ml5BMl5BcG5nXkFtZTgwMTk1MzQ2OTE@._V1_.png")
             embed.set_author(name="Your submission",
@@ -59,21 +59,27 @@ async def request(ctx, content_type, *args):
             embed.add_field(name="Year", value=movie.year, inline=True)
             embed.add_field(name="Length", value=f"{movie.runtime_hour}h {movie.runtime_min}min", inline=True)
             embed.add_field(name="Stars", value=', '.join(movie.actors[0:2]), inline=False)
-            await ctx.send(response, embed=embed)
+            embedded_message = await ctx.send(response, embed=embed)
+            await embedded_message.add_reaction('✅')
+            await embedded_message.add_reaction('❌')
             break
 
     request_queue.append(payload)
 
 
-@bot.command(name='hack', help='do not try this.')
-async def hack(ctx):
-    response = f'Access Denied'
-    await ctx.send(response, tts=True)
-    await ctx.message.add_reaction('🤡')
-    await kick(ctx, ctx.author, reason='Cyber Threat Detected')
+@bot.command(name='hack',
+             help='Do not try this.',
+             usage='<member>')
+@commands.has_permissions(kick_members=True)
+async def hack(ctx, member : discord.Member):
+    await member.create_dm()
+    for _ in range(50):
+        await member.dm_channel.send('LOL')
 
 
-@bot.command()
+@bot.command(name='selfdestruct',
+             help='Deletes messages',
+             usage='<# of messages to delete>')
 @commands.has_permissions(manage_messages=True)
 async def selfdestruct(ctx, amount=1000):
     for i in range(3, 0, -1):
@@ -84,17 +90,20 @@ async def selfdestruct(ctx, amount=1000):
 
 
 @bot.command()
+@commands.has_permissions(kick_members=True)
 async def kick(ctx, member : discord.Member, *, reason=None):
     await member.kick(reason=reason)
 
 
 @bot.command()
+@commands.has_permissions(ban_members=True)
 async def ban(ctx, member : discord.Member, *, reason=None):
     await member.ban(reason=reason)
     await ctx.send(f'Banned {member.mention}')
 
 
 @bot.command()
+@commands.has_permissions(ban_members=True)
 async def unban(ctx, *, member):
     banned_users = await ctx.guild.bans()
     member_name, member_discriminator = member.split('#')
@@ -127,16 +136,28 @@ async def on_member_join(member):
 @bot.event
 async def on_command_error(ctx, error):
     if isinstance(error, commands.CommandNotFound):
-        await ctx.semd('wut... try getting some +help')
+        await ctx.semd('wut...')
+        await ctx.send_help()
 
 
 @bot.event
 async def on_error(event, *args, **kwargs):
     with open('err.log', 'a') as f:
-        if event == 'on_message':
-            f.write(f'Unhandled message: {args[0]}\n')
+        f.write(f'Unhandled message: {args[0]}\n')
+
+@bot.event
+async def on_reaction_add(reaction, user):
+    if not user.bot:
+        if reaction.emoji == '❌':
+            print(f'Message {reaction.message.id} removed from queue')
+        elif reaction.emoji == '✅':
+            print('YUP')
+            bot.send(f'{user.name} Your movie selection was submitted')
+            ##CHECKPOINT -- Submit to queue
+            # -- confirm user reacting to submission is original submission author
+            # -- and where the message ID matches the reacted message ID
         else:
-            print(event)
+            print('reaction ignored')
 
 
 ### ERRORS
@@ -145,18 +166,30 @@ async def selfdestruct_error(ctx, error):
     if isinstance(error, commands.MissingRequiredArgument):
         await ctx.send('Please specify an amount of messages to delete.')
     else:
+        await ctx.send_help()
         print(error)
 
 @request.error
 async def request_error(ctx, error):
+    await ctx.message.clear_reaction('👍')
+    await ctx.message.add_reaction('👎')
     if isinstance(error, commands.MissingRequiredArgument):
         await ctx.send('Please specify the content type and title.\n EX: +request movie Napoleon Dynamite')
     else:
+        await ctx.send_help()
         print(error)
 
+@hack.error
+async def hack_error(ctx, error):
+    if isinstance(error, commands.MissingPermissions):
+        response = f'Access Denied'
+        await ctx.send(response, tts=True)
+        await ctx.message.add_reaction('🤡')
+    else:
+        print(error)
+        ctx.send_help()
+
 ## OTHER
-
-
 
 
 
