@@ -1,11 +1,10 @@
 import os
 import asyncio
 import discord
-import io
-import aiohttp
 from discord.ext import commands
 from dotenv import load_dotenv
 from query import MediaClient
+from aws import Notification
 
 request_queue = []
 
@@ -19,7 +18,12 @@ content_types = ['movie', 'tv-show']
 
 ## CHECKS
 def check_request(ctx):
-    return ctx.args[0] in content_types
+    request = ctx.message.content.strip().replace(' ', '|')
+    request = request.split('|')
+    print(request)
+    if len(request) > 1:
+        return request[1] in content_types and len(request) > 2
+    else: return False
 
 ## COMMANDS
 
@@ -29,17 +33,16 @@ def check_request(ctx):
              usage='<movie/tv-show> [title keywords]')
 @commands.check(check_request)
 async def request(ctx, content_type, *args):
-
     content_type = content_type.lower()
-    payload = {'message_id' : ctx.message.id,
+    payload = {'request_message_id' : ctx.message.id,
                 'content_type' : content_type.strip('-'),
                'raw_content' : ctx.message.content,
                'keywords' : [k.lower() for k in args],
                'reaction_count' : len(ctx.message.reactions),
-               'created_at' : ctx.message.created_at,
-               'edited_at' : ctx.message.edited_at,
+               'created_at' : str(ctx.message.created_at),
+               'edited_at' : str(ctx.message.edited_at),
                'jump_url' : ctx.message.jump_url,
-               'created_by' : ctx.message.author
+               'created_by' : ctx.message.author.name,
                }
     await ctx.message.add_reaction('👍')
     response = f"""Request Accepted {ctx.author.display_name}.\n"""
@@ -51,7 +54,7 @@ async def request(ctx, content_type, *args):
             embed = discord.Embed(title=movie.title,
                                   description=movie.titleType,
                                   colour=discord.Colour.blue())
-            embed.set_footer(text="React to this message to approve/deny submission")
+            embed.set_footer(text="React to this message to confirm or deny submission")
             embed.set_image(url=movie.image_url)
             embed.set_thumbnail(url="https://ia.media-imdb.com/images/M/MV5BMTczNjM0NDY0Ml5BMl5BcG5nXkFtZTgwMTk1MzQ2OTE@._V1_.png")
             embed.set_author(name="Your submission",
@@ -62,6 +65,7 @@ async def request(ctx, content_type, *args):
             embedded_message = await ctx.send(response, embed=embed)
             await embedded_message.add_reaction('✅')
             await embedded_message.add_reaction('❌')
+            payload['result_message_id'] = embedded_message.id
             break
 
     request_queue.append(payload)
@@ -136,37 +140,74 @@ async def on_member_join(member):
 @bot.event
 async def on_command_error(ctx, error):
     if isinstance(error, commands.CommandNotFound):
-        await ctx.semd('wut...')
-        await ctx.send_help()
+        print(error)
+        await ctx.channel.send('wut?')
+    else:
+        print(type(error), error)
 
-
-@bot.event
-async def on_error(event, *args, **kwargs):
-    with open('err.log', 'a') as f:
-        f.write(f'Unhandled message: {args[0]}\n')
+# COMMENTED FOR DEBUG
+# @bot.event
+# async def on_error(event, *args, **kwargs):
+#     print(event, args, kwargs)
+#     with open('err.log', 'a') as f:
+#         f.write(f'Unhandled message: {args[0]}\n')
 
 @bot.event
 async def on_reaction_add(reaction, user):
     if not user.bot:
-        if reaction.emoji == '❌':
-            print(f'Message {reaction.message.id} removed from queue')
-        elif reaction.emoji == '✅':
-            print('YUP')
-            bot.send(f'{user.name} Your movie selection was submitted')
-            ##CHECKPOINT -- Submit to queue
-            # -- confirm user reacting to submission is original submission author
-            # -- and where the message ID matches the reacted message ID
-        else:
-            print('reaction ignored')
+        if reaction.message.embeds:
+            if reaction.emoji == '❌':
+                for r in reaction.message.reactions:
+                    if r.emoji == '✅' and r.count > 1:
+                        try: await r.remove(user)
+                        except Exception as e:
+                            print(e)
+                            continue
+                    else:
+                        continue
+                for item in request_queue:
+                    if user.name == item['created_by']:
+                        if reaction.message.id == item['result_message_id']:
+                            request_queue.remove(item)
+                            print(f'Message {reaction.message.id} removed from queue')
+                        else:
+                            print('No queue item found.')
+                    else:
+                        print('This user has not submitted a request.')
+
+            elif reaction.emoji == '✅':
+                for r in reaction.message.reactions:
+                    if r.emoji == '❌' and r.count > 1:
+                        try: await r.remove(user)
+                        except Exception as e:
+                            print(e)
+                            continue
+                    else:
+                        continue
+                for item in request_queue:
+                    if user.name == item['created_by']:
+                        if reaction.message.id == item['result_message_id']:
+                            Notification('plex-lambda', item).send()
+                            print(f'Message {reaction.message.id} is now confirmed submission')
+                        else:
+                            print('No queue item found.')
+                    else:
+                        print('This user has not submitted a request.')
+                # bot.send(f'{user.name} Your movie selection was submitted')
+                ##CHECKPOINT -- Submit to queue
+                # -- confirm user reacting to submission is original submission author
+                # -- and where the message ID matches the reacted message ID
+            else:
+                print('reaction ignored')
 
 
 ### ERRORS
 @selfdestruct.error
 async def selfdestruct_error(ctx, error):
     if isinstance(error, commands.MissingRequiredArgument):
-        await ctx.send('Please specify an amount of messages to delete.')
+        await ctx.channel.send('Please specify the amount of messages to delete.')
     else:
-        await ctx.send_help()
+        await ctx.send_help(ctx.command)
         print(error)
 
 @request.error
@@ -174,10 +215,12 @@ async def request_error(ctx, error):
     await ctx.message.clear_reaction('👍')
     await ctx.message.add_reaction('👎')
     if isinstance(error, commands.MissingRequiredArgument):
-        await ctx.send('Please specify the content type and title.\n EX: +request movie Napoleon Dynamite')
+        await ctx.send('Please specify the content type and title.')
+    elif isinstance(error, commands.errors.CommandInvokeError):
+        await ctx.channel.send('Sorry, I dont understand your request.')
     else:
-        await ctx.send_help()
-        print(error)
+        await ctx.send_help(ctx.command)
+
 
 @hack.error
 async def hack_error(ctx, error):
@@ -187,7 +230,7 @@ async def hack_error(ctx, error):
         await ctx.message.add_reaction('🤡')
     else:
         print(error)
-        ctx.send_help()
+        await ctx.send_help(ctx.command)
 
 ## OTHER
 
