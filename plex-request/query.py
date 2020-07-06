@@ -70,4 +70,4 @@ class MediaClient:
 
 if __name__ == '__main__':
     keywords = {'content_type': 'movie', 'keywords' : ['invention', 'of', 'lying']}
-    mymovie = Media(**keywords)
+    mymovie = MediaClient(**keywords)

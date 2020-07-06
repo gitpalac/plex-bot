@@ -17,20 +17,59 @@ class Notification:
         self.payload = payload
         self.event_id = uuid.uuid1()
         self.payload['notification_id'] = str(self.event_id)
-
-    def send(self):
-        client = boto3.client('sns',
+        self.client = boto3.client('sns',
                               aws_access_key_id=access_key,
                               aws_secret_access_key=secret_key,
                               region_name=region)
-        response = client.publish(
+
+    def send(self):
+        response = self.client.publish(
             TargetArn=self.topic_arn,
             Message=json.dumps({'default': json.dumps(self.payload)}),
             MessageStructure='json'
         )
-        print(response)
+        return {'response' : response}
 
+
+class Queue:
+    def __init__(self, queue_name):
+        self.queue_name = queue_name
+        self.client = boto3.client('sqs',
+                              aws_access_key_id=access_key,
+                              aws_secret_access_key=secret_key,
+                              region_name=region)
+        self.queue_url = self.client.get_queue_url(
+            QueueName=queue_name)['QueueUrl']
+
+    def get_messages(self):
+        while True:
+            resp = self.client.receive_message(
+                QueueUrl=self.queue_url,
+                AttributeNames=['All'],
+                MaxNumberOfMessages=1
+            )
+
+            try:
+                yield from resp['Messages']
+            except KeyError:
+                return
+
+            entries = [
+                {'Id': msg['MessageId'], 'ReceiptHandle': msg['ReceiptHandle']}
+                for msg in resp['Messages']
+            ]
+
+            resp = self.client.delete_message_batch(
+                QueueUrl=self.queue_url, Entries=entries
+            )
+
+            if len(resp['Successful']) != len(entries):
+                raise RuntimeError(
+                    f"Failed to delete messages: entries={entries!r} resp={resp!r}"
+                )
 
 
 if __name__ == '__main__':
-    Notification()
+    # Notification()
+    import sys
+    print(sys.path)

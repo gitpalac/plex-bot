@@ -1,10 +1,10 @@
 import os
 import asyncio
 import discord
-from discord.ext import commands
+from discord.ext import commands, tasks
 from dotenv import load_dotenv
 from query import MediaClient
-from aws import Notification
+from aws import Notification, Queue
 
 request_queue = []
 
@@ -20,17 +20,16 @@ content_types = ['movie', 'tv-show']
 def check_request(ctx):
     request = ctx.message.content.strip().replace(' ', '|')
     request = request.split('|')
-    print(request)
     if len(request) > 1:
         return request[1] in content_types and len(request) > 2
     else: return False
 
 ## COMMANDS
-
 @bot.command(name='request',
              description='Type this command to request content for Palac+',
              help='Plex requests',
-             usage='<movie/tv-show> [title keywords]')
+             usage='<movie/tv-show> [title keywords]',
+             hidden=False)
 @commands.check(check_request)
 async def request(ctx, content_type, *args):
     content_type = content_type.lower()
@@ -45,7 +44,7 @@ async def request(ctx, content_type, *args):
                'created_by' : ctx.message.author.name,
                }
     await ctx.message.add_reaction('👍')
-    response = f"""Request Accepted {ctx.author.display_name}.\n"""
+    response = f"""Is this what you are looking for?\n"""
     print(f'{ctx.author} added a request : {payload}')
 
     results = MediaClient(**payload)
@@ -57,15 +56,24 @@ async def request(ctx, content_type, *args):
             embed.set_footer(text="React to this message to confirm or deny submission")
             embed.set_image(url=movie.image_url)
             embed.set_thumbnail(url="https://ia.media-imdb.com/images/M/MV5BMTczNjM0NDY0Ml5BMl5BcG5nXkFtZTgwMTk1MzQ2OTE@._V1_.png")
-            embed.set_author(name="Your submission",
+            embed.set_author(name="Confirm your submission",
                              icon_url="https://www.plex.tv/wp-content/uploads/2018/01/pmp-icon-1.png")
             embed.add_field(name="Year", value=movie.year, inline=True)
             embed.add_field(name="Length", value=f"{movie.runtime_hour}h {movie.runtime_min}min", inline=True)
             embed.add_field(name="Stars", value=', '.join(movie.actors[0:2]), inline=False)
             embedded_message = await ctx.send(response, embed=embed)
+
+            payload['result_message_id'] = embedded_message.id
+            payload['year'] = movie.year
+            payload['title'] = movie.title
+            payload['titleType'] = movie.titleType
+            payload['image_url'] = movie.image_url
+            payload['runtime_hour'] = movie.runtime_hour
+            payload['runtime_min'] = movie.runtime_min
+            payload['actors'] = movie.actors
+
             await embedded_message.add_reaction('✅')
             await embedded_message.add_reaction('❌')
-            payload['result_message_id'] = embedded_message.id
             break
 
     request_queue.append(payload)
@@ -73,19 +81,21 @@ async def request(ctx, content_type, *args):
 
 @bot.command(name='hack',
              help='Do not try this.',
-             usage='<member>')
+             usage='@<member>')
 @commands.has_permissions(kick_members=True)
 async def hack(ctx, member : discord.Member):
     await member.create_dm()
     for _ in range(50):
-        await member.dm_channel.send('LOL')
+        await member.dm_channel.send('LOL', tts=True)
 
 
 @bot.command(name='selfdestruct',
              help='Deletes messages',
-             usage='<# of messages to delete>')
+             usage='<# of messages to delete>',
+             hidden=True)
 @commands.has_permissions(manage_messages=True)
 async def selfdestruct(ctx, amount=1000):
+    await asyncio.sleep(2)
     for i in range(3, 0, -1):
         await ctx.send(str(i))
         await asyncio.sleep(1)
@@ -119,6 +129,13 @@ async def unban(ctx, *, member):
             await ctx.send(f'Unbanned {user.mention}')
             return
 
+@bot.command(hidden=True)
+async def load(ctx, extension):
+    bot.load_extension(f'cogs.{extension}')
+
+@bot.command(hidden=True)
+async def unload(ctx, extension):
+    bot.unload_extension(f'cogs.{extension}')
 
 ## EVENTS
 @bot.event
@@ -188,6 +205,8 @@ async def on_reaction_add(reaction, user):
                     if user.name == item['created_by']:
                         if reaction.message.id == item['result_message_id']:
                             Notification('plex-lambda', item).send()
+                            request_queue.remove(item)
+                            await reaction.message.channel.send(f"Confirmed.\nYour submission was sent, {user.name}.\nCheck back later for updates.")
                             print(f'Message {reaction.message.id} is now confirmed submission')
                         else:
                             print('No queue item found.')
@@ -229,6 +248,9 @@ async def hack_error(ctx, error):
         await ctx.send_help(ctx.command)
 
 ## OTHER
+for filename in os.listdir('./plex-automation/plex-request/cogs'):
+    if filename.endswith('.py'):
+        bot.load_extension(f'cogs.{filename[:-3]}')
 
 
 
