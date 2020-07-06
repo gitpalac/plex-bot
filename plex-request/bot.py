@@ -127,11 +127,11 @@ async def on_ready():
 
 @bot.event
 async def on_member_join(member):
-    welcome_message = f"""Hi {member.name}, welcome to Palac+ Discord server!
+    welcome_message = f"""Hi {member.name}, welcome to the Palac+ Discord server!
                      \nThis is a special discord channel where you can submit content requests to Palac+.
                      \nTo get started, submit a request by typing a command like this into the requests channel:
-                     \n +request -movie <keyword1 keyword2 keyword3>  
-                     \n +request -movie Napoleon Dynamite
+                     \n +request movie <keyword1 keyword2 keyword3>  
+                     \n +request movie Napoleon Dynamite
                      \nFor additional help, type +help."""
     await member.create_dm()
     await member.dm_channel.send(welcome_message)
@@ -193,10 +193,6 @@ async def on_reaction_add(reaction, user):
                             print('No queue item found.')
                     else:
                         print('This user has not submitted a request.')
-                # bot.send(f'{user.name} Your movie selection was submitted')
-                ##CHECKPOINT -- Submit to queue
-                # -- confirm user reacting to submission is original submission author
-                # -- and where the message ID matches the reacted message ID
             else:
                 print('reaction ignored')
 
