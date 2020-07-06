@@ -17,7 +17,7 @@ class Task(commands.Cog):
         print('polling download queue...')
         self.check_dl_status.start()
 
-    @tasks.loop(minutes=120)
+    @tasks.loop(minutes=60)
     async def batch_download(self):
         await self.bot.wait_until_ready()
         print('starting content update...')
@@ -38,7 +38,7 @@ class Task(commands.Cog):
             tor.download(torrent)
             self.download_queue.append(torrent)
 
-    @tasks.loop(minutes=1)
+    @tasks.loop(minutes=5)
     async def check_dl_status(self):
         await self.bot.wait_until_ready()
         tor = parrot.TorrentClient()
