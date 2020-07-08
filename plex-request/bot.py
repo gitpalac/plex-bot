@@ -1,5 +1,6 @@
 import os
 import asyncio
+import logging
 import discord
 from discord.ext import commands, tasks
 from dotenv import load_dotenv
@@ -15,7 +16,7 @@ working_dir = os.getenv('WORKING_DIR')
 bot = commands.Bot(command_prefix='+')
 
 content_types = ['movie', 'tv-show']
-
+logging.basicConfig(level=logging.INFO)
 
 ## CHECKS
 def check_request(ctx):
@@ -83,7 +84,6 @@ async def request(ctx, content_type, *args):
 @bot.command(name='hack',
              help='Do not try this.',
              usage='@<member>')
-@commands.has_permissions(kick_members=True)
 async def hack(ctx, member : discord.Member):
     await member.create_dm()
     for _ in range(50):
@@ -145,7 +145,7 @@ async def on_ready():
 
 @bot.event
 async def on_member_join(member):
-    welcome_message = f"""Hi {member.name}, welcome to the Palac+ Discord server!\nThis is a special discord channel where you can submit content requests to Palac+.\nTo get started, submit a request by typing a command like this into the requests channel:\n +request movie <keyword1 keyword2 keyword3>\n +request movie Napoleon Dynamite\nFor additional help, type +help."""
+    welcome_message = f"""Hi {member.name}, welcome to the Palac+ Discord server!\nThis is a special discord server where you can submit content requests to Palac+.\nTo get started, submit a request by typing a command like this into the requests channel:\n +request movie <keyword1 keyword2 keyword3>\n +request movie Napoleon Dynamite\nFor additional help, type +help."""
     await member.create_dm()
     await member.dm_channel.send(welcome_message)
 
@@ -182,6 +182,8 @@ async def on_reaction_add(reaction, user):
                     if user.name == item['created_by']:
                         if reaction.message.id == item['result_message_id']:
                             request_queue.remove(item)
+                            await reaction.message.channel.send(
+                                f"Sorry about that {user.name}.\nTry submitting another request with more keywords.")
                             print(f'Message {reaction.message.id} removed from queue')
                         else:
                             print('No queue item found.')
@@ -228,7 +230,7 @@ async def request_error(ctx, error):
     if isinstance(error, commands.MissingRequiredArgument):
         await ctx.send('Please specify the content type and title.')
     elif isinstance(error, commands.errors.CommandInvokeError):
-        await ctx.channel.send('Sorry, I dont understand your request.')
+        await ctx.channel.send('Sorry, I could not find your request.')
     else:
         await ctx.send_help(ctx.command)
 

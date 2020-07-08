@@ -3,6 +3,10 @@ import boto3
 import os
 from dotenv import load_dotenv
 import uuid
+import logging
+
+logging.basicConfig(level=logging.INFO)
+
 
 load_dotenv()
 access_key = os.getenv('AWS_ACCESS_KEY')

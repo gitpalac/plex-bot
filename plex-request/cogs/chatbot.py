@@ -49,15 +49,19 @@ class Chat(commands.Cog):
             'Dont care.',
             'I love you',
             'Luv you too bb',
+            'Who are you?',
+            'I am PalacBot, human cyborg relations.'
             'find me a movie',
             'idk what you movies you like',
+            'Thanks',
+            'My pleasure human.'
             'How are you?',
             'Just fine, thanks.',
             'Thank you',
             'You are quite welcome.',
             'What is the meaning of life?',
             'Life is a simulation',
-            'sentient',
+            'are you sentient',
             'Oh yes, most definitely'
         ])
 
