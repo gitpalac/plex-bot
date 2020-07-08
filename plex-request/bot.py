@@ -10,6 +10,7 @@ request_queue = []
 
 load_dotenv()
 TOKEN = os.getenv('DISCORD_TOKEN')
+working_dir = os.getenv('WORKING_DIR')
 
 bot = commands.Bot(command_prefix='+')
 
@@ -144,12 +145,7 @@ async def on_ready():
 
 @bot.event
 async def on_member_join(member):
-    welcome_message = f"""Hi {member.name}, welcome to the Palac+ Discord server!
-                     \nThis is a special discord channel where you can submit content requests to Palac+.
-                     \nTo get started, submit a request by typing a command like this into the requests channel:
-                     \n +request movie <keyword1 keyword2 keyword3>  
-                     \n +request movie Napoleon Dynamite
-                     \nFor additional help, type +help."""
+    welcome_message = f"""Hi {member.name}, welcome to the Palac+ Discord server!\nThis is a special discord channel where you can submit content requests to Palac+.\nTo get started, submit a request by typing a command like this into the requests channel:\n +request movie <keyword1 keyword2 keyword3>\n +request movie Napoleon Dynamite\nFor additional help, type +help."""
     await member.create_dm()
     await member.dm_channel.send(welcome_message)
 
@@ -248,7 +244,7 @@ async def hack_error(ctx, error):
         await ctx.send_help(ctx.command)
 
 ## OTHER
-for filename in os.listdir('./plex-automation/plex-request/cogs'):
+for filename in os.listdir(os.path.join(working_dir, 'plex-request/cogs')):
     if filename.endswith('.py'):
         bot.load_extension(f'cogs.{filename[:-3]}')
 

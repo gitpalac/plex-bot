@@ -3,16 +3,18 @@ from discord.ext import commands, tasks
 from aws import Notification, Queue
 import sys
 import json
-# sys.path.insert(0, "/home/localadmin/private/scripts/torrent-pirate")
-sys.path.insert(0, '/Users/mikepalacio/dev/torrent-pirate')
+sys.path.insert(0, "/home/localadmin/private/scripts/torrent-pirate")
+#sys.path.insert(0, '/Users/mikepalacio/dev/torrent-pirate')
 from parrotbay import parrot
 
+save_path = '/home/localadmin/public/movies'
 
 class Task(commands.Cog):
 
     def __init__(self, bot):
         self.bot = bot
         self.download_queue = []
+        print('starting content update...')
         self.batch_download.start()
         print('polling download queue...')
         self.check_dl_status.start()
@@ -20,7 +22,6 @@ class Task(commands.Cog):
     @tasks.loop(minutes=60)
     async def batch_download(self):
         await self.bot.wait_until_ready()
-        print('starting content update...')
         queue = Queue('plex_queue')
         messages = queue.get_messages()
         for msg in messages:
@@ -34,7 +35,7 @@ class Task(commands.Cog):
             torrent['image_url'] = msg['image_url']
             torrent['year'] = msg['year']
             tor = parrot.TorrentClient()
-            tor.set_savepath('/Users/mikepalacio/Desktop')
+            tor.set_savepath(save_path)
             tor.download(torrent)
             self.download_queue.append(torrent)
 
