@@ -15,7 +15,6 @@ class Chat(commands.Cog):
 
     def __init__(self, client):
         self.bot = client
-        logging.basicConfig(level=logging.INFO)
         self.chatbot = ChatBot('PalacBot',
                                storage_adapter='chatterbot.storage.SQLStorageAdapter',
                                logic_adapters=[{

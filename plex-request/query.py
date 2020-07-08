@@ -4,8 +4,6 @@ import os
 from dotenv import load_dotenv
 import logging
 
-logging.basicConfig(level=logging.INFO)
-
 
 class Movie:
 
@@ -28,7 +26,6 @@ class MediaClient:
 
     def __init__(self, **kwargs):
         load_dotenv()
-
         self.content_type = kwargs.get('content_type', None)
         self.keywords = kwargs.get('keywords', None)
         assert len(self.keywords) >= 1

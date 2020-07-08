@@ -9,7 +9,7 @@ sys.path.insert(0, "/home/localadmin/private/scripts/torrent-pirate")
 from parrotbay import parrot
 
 save_path = '/home/localadmin/public/movies'
-logging.basicConfig(level=logging.INFO)
+
 
 class Task(commands.Cog):
 

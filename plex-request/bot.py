@@ -16,7 +16,6 @@ working_dir = os.getenv('WORKING_DIR')
 bot = commands.Bot(command_prefix='+')
 
 content_types = ['movie', 'tv-show']
-logging.basicConfig(level=logging.INFO)
 
 ## CHECKS
 def check_request(ctx):
