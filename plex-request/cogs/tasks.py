@@ -4,8 +4,14 @@ from aws import Notification, Queue
 import sys
 import json
 import logging
-sys.path.insert(0, "/home/localadmin/private/scripts/torrent-pirate")
-#sys.path.insert(0, '/Users/mikepalacio/dev/torrent-pirate')
+import unicodedata
+
+try:
+    sys.path.insert(0, "/home/localadmin/private/scripts/torrent-pirate")
+except Exception as e:
+    print(e)
+finally: sys.path.insert(0, '/Users/mikepalacio/dev/torrent-pirate')
+
 from parrotbay import parrot
 
 save_path = '/home/localadmin/public/movies'
@@ -16,23 +22,23 @@ class Task(commands.Cog):
     def __init__(self, bot):
         self.bot = bot
         self.download_queue = []
-        print('starting content update...')
         self.batch_download.start()
-        print('polling download queue...')
         self.check_dl_status.start()
 
     @tasks.loop(minutes=60)
     async def batch_download(self):
         await self.bot.wait_until_ready()
-        try:
-            queue = Queue('plex_queue')
-            messages = queue.get_messages()
-            for msg in messages:
+        print('downloading from queue...')
+        queue = Queue('plex_queue')
+        messages = queue.get_messages()
+        for msg in messages:
+            try:
                 msg = json.loads(msg['Body'])
-                msg = json.loads(msg['Records'][0]['Sns']['Message'])
-                print(f"Searching for {msg['title'] + ' ' + str(msg['year'])}")
+                msg = json.loads(msg['Records'][0]['Sns']['Message'], encoding='utf-8')
+                title = unicodedata.normalize('NFD', msg['title']).encode('ascii', 'ignore').decode("utf-8")
+                print(f"Searching for {title + ' ' + str(msg['year'])}")
                 pirate = parrot.PirateClient()
-                pirate.search(msg['title'] + ' ' + str(msg['year']))
+                pirate.search(title + ' ' + str(msg['year']))
                 torrent = pirate.best_match()
                 torrent['imdb_title'] = msg['title']
                 torrent['image_url'] = msg['image_url']
@@ -41,11 +47,14 @@ class Task(commands.Cog):
                 tor.set_savepath(save_path)
                 tor.download(torrent)
                 self.download_queue.append(torrent)
-        except Exception as e:
-            print(f'Issue downloading from queue --{e}')
+            except Exception as e:
+                print(f'Issue downloading {title} from queue --{e}')
+                continue
 
-    @tasks.loop(minutes=5)
+
+    @tasks.loop(minutes=20)
     async def check_dl_status(self):
+        print('checking for completed downloads...', flush=True)
         await self.bot.wait_until_ready()
         try:
             tor = parrot.TorrentClient()

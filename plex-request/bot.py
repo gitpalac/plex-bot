@@ -6,16 +6,11 @@ from discord.ext import commands, tasks
 from dotenv import load_dotenv
 from query import MediaClient
 from aws import Notification, Queue
-
-request_queue = []
-
-load_dotenv()
-TOKEN = os.getenv('DISCORD_TOKEN')
-working_dir = os.getenv('WORKING_DIR')
+import argparse
+import random
 
 bot = commands.Bot(command_prefix='+')
 
-content_types = ['movie', 'tv-show']
 
 ## CHECKS
 def check_request(ctx):
@@ -144,7 +139,7 @@ async def on_ready():
 
 @bot.event
 async def on_member_join(member):
-    welcome_message = f"""Hi {member.name}, welcome to the Palac+ Discord server!\nThis is a special discord server where you can submit content requests to Palac+.\nTo get started, submit a request by typing a command like this into the requests channel:\n +request movie <keyword1 keyword2 keyword3>\n +request movie Napoleon Dynamite\nFor additional help, type +help."""
+    welcome_message = f"""Hi {member.name}, You have been added to the Palac+ Discord server!\nThis is a special discord server where you can submit content requests to Palac+.\nTo get started, submit a request by typing a command like this into the requests channel:\n +request movie <keyword1 keyword2 keyword3>\n +request movie Napoleon Dynamite\nFor additional help, type +help."""
     await member.create_dm()
     await member.dm_channel.send(welcome_message)
 
@@ -244,12 +239,26 @@ async def hack_error(ctx, error):
         print(error)
         await ctx.send_help(ctx.command)
 
-## OTHER
-for filename in os.listdir(os.path.join(working_dir, 'plex-request/cogs')):
-    if filename.endswith('.py'):
-        bot.load_extension(f'cogs.{filename[:-3]}')
-
 
 
 if __name__ == '__main__':
+    load_dotenv()
+    parser = argparse.ArgumentParser()
+    parser.add_argument('--mode', help='run dev enviroment')
+    prefix = ''
+    args = parser.parse_args()
+    if args.mode:
+        if args.mode == 'dev':
+            print(f'Running in {args.mode} mode.')
+            prefix = 'DEV_'
+
+    request_queue = []
+    TOKEN = os.getenv(prefix + 'DISCORD_TOKEN')
+    working_dir = os.getenv(prefix + 'WORKING_DIR')
+    content_types = ['movie']
+    # COGS
+    for filename in os.listdir(os.path.join(working_dir, 'plex-request/cogs')):
+        if filename.endswith('.py'):
+            bot.load_extension(f'cogs.{filename[:-3]}')
     bot.run(TOKEN)
+

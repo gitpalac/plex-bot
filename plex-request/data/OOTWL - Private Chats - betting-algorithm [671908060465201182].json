@@ -1,0 +1,3628 @@
+{
+  "guild": {
+    "id": "595769555175997441",
+    "name": "OOTWL",
+    "iconUrl": "https://cdn.discordapp.com/icons/595769555175997441/aa1e1416ff2a73001e8426c1e8320fe6.png"
+  },
+  "channel": {
+    "id": "671908060465201182",
+    "type": "GuildTextChat",
+    "category": "Private Chats",
+    "name": "betting-algorithm",
+    "topic": null
+  },
+  "dateRange": {
+    "after": null,
+    "before": null
+  },
+  "messages": [
+    {
+      "id": "671909275278508042",
+      "type": "Default",
+      "timestamp": "2020-01-29T02:47:34.697+00:00",
+      "timestampEdited": null,
+      "isPinned": false,
+      "content": "i made this channel if we ever wanna talk about shit in the future",
+      "author": {
+        "id": "222544380781658122",
+        "name": "ARiso",
+        "discriminator": "2042",
+        "isBot": false,
+        "avatarUrl": "https://cdn.discordapp.com/avatars/222544380781658122/5e0596b4c61c324128b5e471b33f61b0.png"
+      },
+      "attachments": [],
+      "embeds": [],
+      "reactions": []
+    },
+    {
+      "id": "671909552391979009",
+      "type": "Default",
+      "timestamp": "2020-01-29T02:48:40.766+00:00",
+      "timestampEdited": null,
+      "isPinned": false,
+      "content": "for clarification, its me, don, palac, matt",
+      "author": {
+        "id": "222544380781658122",
+        "name": "ARiso",
+        "discriminator": "2042",
+        "isBot": false,
+        "avatarUrl": "https://cdn.discordapp.com/avatars/222544380781658122/5e0596b4c61c324128b5e471b33f61b0.png"
+      },
+      "attachments": [],
+      "embeds": [],
+      "reactions": []
+    },
+    {
+      "id": "671909885406871561",
+      "type": "Default",
+      "timestamp": "2020-01-29T02:50:00.163+00:00",
+      "timestampEdited": null,
+      "isPinned": false,
+      "content": "Swell",
+      "author": {
+        "id": "671906232399036437",
+        "name": "mmarotti",
+        "discriminator": "4522",
+        "isBot": false,
+        "avatarUrl": "https://cdn.discordapp.com/embed/avatars/2.png"
+      },
+      "attachments": [],
+      "embeds": [],
+      "reactions": []
+    },
+    {
+      "id": "671910072284348466",
+      "type": "Default",
+      "timestamp": "2020-01-29T02:50:44.718+00:00",
+      "timestampEdited": null,
+      "isPinned": false,
+      "content": ":Sandler:",
+      "author": {
+        "id": "331161178069925899",
+        "name": "don",
+        "discriminator": "0780",
+        "isBot": false,
+        "avatarUrl": "https://cdn.discordapp.com/avatars/331161178069925899/9456b7532fe7e68e9c781e331b76301e.png"
+      },
+      "attachments": [],
+      "embeds": [],
+      "reactions": []
+    },
+    {
+      "id": "671910130442305546",
+      "type": "Default",
+      "timestamp": "2020-01-29T02:50:58.584+00:00",
+      "timestampEdited": null,
+      "isPinned": false,
+      "content": "I WANT GARNETT POINTS AND REBOUNDS",
+      "author": {
+        "id": "671906232399036437",
+        "name": "mmarotti",
+        "discriminator": "4522",
+        "isBot": false,
+        "avatarUrl": "https://cdn.discordapp.com/embed/avatars/2.png"
+      },
+      "attachments": [],
+      "embeds": [],
+      "reactions": [
+        {
+          "emoji": {
+            "id": "596136384188907554",
+            "name": "LaughingDon",
+            "isAnimated": false,
+            "imageUrl": "https://cdn.discordapp.com/emojis/596136384188907554.png"
+          },
+          "count": 2
+        },
+        {
+          "emoji": {
+            "id": "667513660264153088",
+            "name": "Sandler",
+            "isAnimated": false,
+            "imageUrl": "https://cdn.discordapp.com/emojis/667513660264153088.png"
+          },
+          "count": 1
+        }
+      ]
+    },
+    {
+      "id": "671910207974277135",
+      "type": "Default",
+      "timestamp": "2020-01-29T02:51:17.069+00:00",
+      "timestampEdited": null,
+      "isPinned": false,
+      "content": ":stonks: :stonks: :stonks:",
+      "author": {
+        "id": "222544380781658122",
+        "name": "ARiso",
+        "discriminator": "2042",
+        "isBot": false,
+        "avatarUrl": "https://cdn.discordapp.com/avatars/222544380781658122/5e0596b4c61c324128b5e471b33f61b0.png"
+      },
+      "attachments": [],
+      "embeds": [],
+      "reactions": []
+    },
+    {
+      "id": "674430637532250134",
+      "type": "Default",
+      "timestamp": "2020-02-05T01:46:34.303+00:00",
+      "timestampEdited": null,
+      "isPinned": false,
+      "content": "@ARiso can you send me some examples of the data you are scraping/want to be scraped? I want to start building something out for this ASAP",
+      "author": {
+        "id": "594967425049427969",
+        "name": "Mr. Poopybutthole",
+        "discriminator": "5624",
+        "isBot": false,
+        "avatarUrl": "https://cdn.discordapp.com/avatars/594967425049427969/7f0f76872a28766557dcac7ddafc2d25.png"
+      },
+      "attachments": [],
+      "embeds": [],
+      "reactions": []
+    },
+    {
+      "id": "674430683124596736",
+      "type": "Default",
+      "timestamp": "2020-02-05T01:46:45.173+00:00",
+      "timestampEdited": null,
+      "isPinned": false,
+      "content": "Oh fuck yeah",
+      "author": {
+        "id": "222544380781658122",
+        "name": "ARiso",
+        "discriminator": "2042",
+        "isBot": false,
+        "avatarUrl": "https://cdn.discordapp.com/avatars/222544380781658122/5e0596b4c61c324128b5e471b33f61b0.png"
+      },
+      "attachments": [],
+      "embeds": [],
+      "reactions": []
+    },
+    {
+      "id": "674430725914755082",
+      "type": "Default",
+      "timestamp": "2020-02-05T01:46:55.375+00:00",
+      "timestampEdited": null,
+      "isPinned": false,
+      "content": ":KolWorld:",
+      "author": {
+        "id": "222544380781658122",
+        "name": "ARiso",
+        "discriminator": "2042",
+        "isBot": false,
+        "avatarUrl": "https://cdn.discordapp.com/avatars/222544380781658122/5e0596b4c61c324128b5e471b33f61b0.png"
+      },
+      "attachments": [],
+      "embeds": [],
+      "reactions": []
+    },
+    {
+      "id": "674430728586395669",
+      "type": "Default",
+      "timestamp": "2020-02-05T01:46:56.012+00:00",
+      "timestampEdited": null,
+      "isPinned": false,
+      "content": "good christ the list is endless",
+      "author": {
+        "id": "671906232399036437",
+        "name": "mmarotti",
+        "discriminator": "4522",
+        "isBot": false,
+        "avatarUrl": "https://cdn.discordapp.com/embed/avatars/2.png"
+      },
+      "attachments": [],
+      "embeds": [],
+      "reactions": []
+    },
+    {
+      "id": "674430836120223785",
+      "type": "Default",
+      "timestamp": "2020-02-05T01:47:21.65+00:00",
+      "timestampEdited": null,
+      "isPinned": false,
+      "content": "Matt, nba.com is probably first on the list right? I can show him pace and the efficiencies?",
+      "author": {
+        "id": "222544380781658122",
+        "name": "ARiso",
+        "discriminator": "2042",
+        "isBot": false,
+        "avatarUrl": "https://cdn.discordapp.com/avatars/222544380781658122/5e0596b4c61c324128b5e471b33f61b0.png"
+      },
+      "attachments": [],
+      "embeds": [],
+      "reactions": []
+    },
+    {
+      "id": "674430922292068353",
+      "type": "Default",
+      "timestamp": "2020-02-05T01:47:42.195+00:00",
+      "timestampEdited": null,
+      "isPinned": false,
+      "content": "first and last probably, im thinking daily game pace and results",
+      "author": {
+        "id": "671906232399036437",
+        "name": "mmarotti",
+        "discriminator": "4522",
+        "isBot": false,
+        "avatarUrl": "https://cdn.discordapp.com/embed/avatars/2.png"
+      },
+      "attachments": [],
+      "embeds": [],
+      "reactions": []
+    },
+    {
+      "id": "674431041083015179",
+      "type": "Default",
+      "timestamp": "2020-02-05T01:48:10.517+00:00",
+      "timestampEdited": null,
+      "isPinned": false,
+      "content": "potentially player-centric as well but we aren\u0027t there yet",
+      "author": {
+        "id": "671906232399036437",
+        "name": "mmarotti",
+        "discriminator": "4522",
+        "isBot": false,
+        "avatarUrl": "https://cdn.discordapp.com/embed/avatars/2.png"
+      },
+      "attachments": [],
+      "embeds": [],
+      "reactions": []
+    },
+    {
+      "id": "674431167675498506",
+      "type": "Default",
+      "timestamp": "2020-02-05T01:48:40.699+00:00",
+      "timestampEdited": null,
+      "isPinned": false,
+      "content": "Well I\u2019ll give him pace results because that\u2019s probably primary. And it\u2019s a little weird given filters",
+      "author": {
+        "id": "222544380781658122",
+        "name": "ARiso",
+        "discriminator": "2042",
+        "isBot": false,
+        "avatarUrl": "https://cdn.discordapp.com/avatars/222544380781658122/5e0596b4c61c324128b5e471b33f61b0.png"
+      },
+      "attachments": [],
+      "embeds": [],
+      "reactions": []
+    },
+    {
+      "id": "674431209694036017",
+      "type": "Default",
+      "timestamp": "2020-02-05T01:48:50.717+00:00",
+      "timestampEdited": null,
+      "isPinned": false,
+      "content": "If Palac can do that, he can do anything so easily",
+      "author": {
+        "id": "222544380781658122",
+        "name": "ARiso",
+        "discriminator": "2042",
+        "isBot": false,
+        "avatarUrl": "https://cdn.discordapp.com/avatars/222544380781658122/5e0596b4c61c324128b5e471b33f61b0.png"
+      },
+      "attachments": [],
+      "embeds": [],
+      "reactions": []
+    },
+    {
+      "id": "674431387536982045",
+      "type": "Default",
+      "timestamp": "2020-02-05T01:49:33.118+00:00",
+      "timestampEdited": null,
+      "isPinned": false,
+      "content": "agreed, should be relatively simple, but link may be appended to change with a change in pace",
+      "author": {
+        "id": "671906232399036437",
+        "name": "mmarotti",
+        "discriminator": "4522",
+        "isBot": false,
+        "avatarUrl": "https://cdn.discordapp.com/embed/avatars/2.png"
+      },
+      "attachments": [],
+      "embeds": [],
+      "reactions": []
+    },
+    {
+      "id": "674431417400295436",
+      "type": "Default",
+      "timestamp": "2020-02-05T01:49:40.238+00:00",
+      "timestampEdited": null,
+      "isPinned": false,
+      "content": "change in the date***",
+      "author": {
+        "id": "671906232399036437",
+        "name": "mmarotti",
+        "discriminator": "4522",
+        "isBot": false,
+        "avatarUrl": "https://cdn.discordapp.com/embed/avatars/2.png"
+      },
+      "attachments": [],
+      "embeds": [],
+      "reactions": []
+    },
+    {
+      "id": "674432491280531496",
+      "type": "Default",
+      "timestamp": "2020-02-05T01:53:56.271+00:00",
+      "timestampEdited": null,
+      "isPinned": false,
+      "content": "Do you still want to handle game results?",
+      "author": {
+        "id": "222544380781658122",
+        "name": "ARiso",
+        "discriminator": "2042",
+        "isBot": false,
+        "avatarUrl": "https://cdn.discordapp.com/avatars/222544380781658122/5e0596b4c61c324128b5e471b33f61b0.png"
+      },
+      "attachments": [],
+      "embeds": [],
+      "reactions": []
+    },
+    {
+      "id": "674432512809893908",
+      "type": "Default",
+      "timestamp": "2020-02-05T01:54:01.404+00:00",
+      "timestampEdited": null,
+      "isPinned": false,
+      "content": "In regards to score",
+      "author": {
+        "id": "222544380781658122",
+        "name": "ARiso",
+        "discriminator": "2042",
+        "isBot": false,
+        "avatarUrl": "https://cdn.discordapp.com/avatars/222544380781658122/5e0596b4c61c324128b5e471b33f61b0.png"
+      },
+      "attachments": [],
+      "embeds": [],
+      "reactions": []
+    },
+    {
+      "id": "674432521827516446",
+      "type": "Default",
+      "timestamp": "2020-02-05T01:54:03.554+00:00",
+      "timestampEdited": null,
+      "isPinned": false,
+      "content": "@mmarotti",
+      "author": {
+        "id": "222544380781658122",
+        "name": "ARiso",
+        "discriminator": "2042",
+        "isBot": false,
+        "avatarUrl": "https://cdn.discordapp.com/avatars/222544380781658122/5e0596b4c61c324128b5e471b33f61b0.png"
+      },
+      "attachments": [],
+      "embeds": [],
+      "reactions": []
+    },
+    {
+      "id": "674432598671622162",
+      "type": "Default",
+      "timestamp": "2020-02-05T01:54:21.875+00:00",
+      "timestampEdited": null,
+      "isPinned": false,
+      "content": "yes, if we get it in excel it will be much easier to visualize the process for scraping it",
+      "author": {
+        "id": "671906232399036437",
+        "name": "mmarotti",
+        "discriminator": "4522",
+        "isBot": false,
+        "avatarUrl": "https://cdn.discordapp.com/embed/avatars/2.png"
+      },
+      "attachments": [],
+      "embeds": [],
+      "reactions": []
+    },
+    {
+      "id": "674432695354392617",
+      "type": "Default",
+      "timestamp": "2020-02-05T01:54:44.926+00:00",
+      "timestampEdited": null,
+      "isPinned": false,
+      "content": "i got home a bit earlier than usual so im starting that process tonight",
+      "author": {
+        "id": "671906232399036437",
+        "name": "mmarotti",
+        "discriminator": "4522",
+        "isBot": false,
+        "avatarUrl": "https://cdn.discordapp.com/embed/avatars/2.png"
+      },
+      "attachments": [],
+      "embeds": [],
+      "reactions": []
+    },
+    {
+      "id": "674432760223367208",
+      "type": "Default",
+      "timestamp": "2020-02-05T01:55:00.392+00:00",
+      "timestampEdited": null,
+      "isPinned": false,
+      "content": "Okay yeah I think we should let Palac focus on one site. So nba.com it is",
+      "author": {
+        "id": "222544380781658122",
+        "name": "ARiso",
+        "discriminator": "2042",
+        "isBot": false,
+        "avatarUrl": "https://cdn.discordapp.com/avatars/222544380781658122/5e0596b4c61c324128b5e471b33f61b0.png"
+      },
+      "attachments": [],
+      "embeds": [],
+      "reactions": []
+    },
+    {
+      "id": "674432962955313173",
+      "type": "Default",
+      "timestamp": "2020-02-05T01:55:48.727+00:00",
+      "timestampEdited": null,
+      "isPinned": false,
+      "content": "however",
+      "author": {
+        "id": "671906232399036437",
+        "name": "mmarotti",
+        "discriminator": "4522",
+        "isBot": false,
+        "avatarUrl": "https://cdn.discordapp.com/embed/avatars/2.png"
+      },
+      "attachments": [],
+      "embeds": [],
+      "reactions": []
+    },
+    {
+      "id": "674433043401932811",
+      "type": "Default",
+      "timestamp": "2020-02-05T01:56:07.907+00:00",
+      "timestampEdited": null,
+      "isPinned": false,
+      "content": "we will at some point want to make the transition to using NBA.com stats only to project",
+      "author": {
+        "id": "671906232399036437",
+        "name": "mmarotti",
+        "discriminator": "4522",
+        "isBot": false,
+        "avatarUrl": "https://cdn.discordapp.com/embed/avatars/2.png"
+      },
+      "attachments": [],
+      "embeds": [],
+      "reactions": []
+    },
+    {
+      "id": "674433075974897678",
+      "type": "Default",
+      "timestamp": "2020-02-05T01:56:15.673+00:00",
+      "timestampEdited": null,
+      "isPinned": false,
+      "content": "you know how we currently pull pace from ESPN?",
+      "author": {
+        "id": "671906232399036437",
+        "name": "mmarotti",
+        "discriminator": "4522",
+        "isBot": false,
+        "avatarUrl": "https://cdn.discordapp.com/embed/avatars/2.png"
+      },
+      "attachments": [],
+      "embeds": [],
+      "reactions": []
+    },
+    {
+      "id": "674433134351351809",
+      "type": "Default",
+      "timestamp": "2020-02-05T01:56:29.591+00:00",
+      "timestampEdited": null,
+      "isPinned": false,
+      "content": "We pull pace results from nba tho",
+      "author": {
+        "id": "222544380781658122",
+        "name": "ARiso",
+        "discriminator": "2042",
+        "isBot": false,
+        "avatarUrl": "https://cdn.discordapp.com/avatars/222544380781658122/5e0596b4c61c324128b5e471b33f61b0.png"
+      },
+      "attachments": [],
+      "embeds": [],
+      "reactions": []
+    },
+    {
+      "id": "674433171072483328",
+      "type": "Default",
+      "timestamp": "2020-02-05T01:56:38.346+00:00",
+      "timestampEdited": null,
+      "isPinned": false,
+      "content": "copy and pasting from NBA\u0027s site isn\u0027t a viable option, so it will have to be scraped",
+      "author": {
+        "id": "671906232399036437",
+        "name": "mmarotti",
+        "discriminator": "4522",
+        "isBot": false,
+        "avatarUrl": "https://cdn.discordapp.com/embed/avatars/2.png"
+      },
+      "attachments": [],
+      "embeds": [],
+      "reactions": []
+    },
+    {
+      "id": "674433194879090698",
+      "type": "Default",
+      "timestamp": "2020-02-05T01:56:44.022+00:00",
+      "timestampEdited": null,
+      "isPinned": false,
+      "content": "right, which is the issue",
+      "author": {
+        "id": "671906232399036437",
+        "name": "mmarotti",
+        "discriminator": "4522",
+        "isBot": false,
+        "avatarUrl": "https://cdn.discordapp.com/embed/avatars/2.png"
+      },
+      "attachments": [],
+      "embeds": [],
+      "reactions": []
+    },
+    {
+      "id": "674433235266174986",
+      "type": "Default",
+      "timestamp": "2020-02-05T01:56:53.651+00:00",
+      "timestampEdited": null,
+      "isPinned": false,
+      "content": "ESPN for projections but NBA for actual",
+      "author": {
+        "id": "671906232399036437",
+        "name": "mmarotti",
+        "discriminator": "4522",
+        "isBot": false,
+        "avatarUrl": "https://cdn.discordapp.com/embed/avatars/2.png"
+      },
+      "attachments": [],
+      "embeds": [],
+      "reactions": []
+    },
+    {
+      "id": "674433301179662337",
+      "type": "Default",
+      "timestamp": "2020-02-05T01:57:09.366+00:00",
+      "timestampEdited": null,
+      "isPinned": false,
+      "content": "Yeah so that\u2019s good if we let Palac focus on one site",
+      "author": {
+        "id": "222544380781658122",
+        "name": "ARiso",
+        "discriminator": "2042",
+        "isBot": false,
+        "avatarUrl": "https://cdn.discordapp.com/avatars/222544380781658122/5e0596b4c61c324128b5e471b33f61b0.png"
+      },
+      "attachments": [],
+      "embeds": [],
+      "reactions": []
+    },
+    {
+      "id": "674433420138512385",
+      "type": "Default",
+      "timestamp": "2020-02-05T01:57:37.728+00:00",
+      "timestampEdited": null,
+      "isPinned": false,
+      "content": "yep agreed, i\u0027m just stating that in addition to the actual results, the team statistics page should be converted to pull from NBA.com",
+      "author": {
+        "id": "671906232399036437",
+        "name": "mmarotti",
+        "discriminator": "4522",
+        "isBot": false,
+        "avatarUrl": "https://cdn.discordapp.com/embed/avatars/2.png"
+      },
+      "attachments": [],
+      "embeds": [],
+      "reactions": []
+    },
+    {
+      "id": "674433446927532035",
+      "type": "Default",
+      "timestamp": "2020-02-05T01:57:44.115+00:00",
+      "timestampEdited": null,
+      "isPinned": false,
+      "content": "not urgent i suppose",
+      "author": {
+        "id": "671906232399036437",
+        "name": "mmarotti",
+        "discriminator": "4522",
+        "isBot": false,
+        "avatarUrl": "https://cdn.discordapp.com/embed/avatars/2.png"
+      },
+      "attachments": [],
+      "embeds": [],
+      "reactions": []
+    },
+    {
+      "id": "674433548039749663",
+      "type": "Default",
+      "timestamp": "2020-02-05T01:58:08.222+00:00",
+      "timestampEdited": null,
+      "isPinned": false,
+      "content": "I\u2019ll put this together for you Palac",
+      "author": {
+        "id": "222544380781658122",
+        "name": "ARiso",
+        "discriminator": "2042",
+        "isBot": false,
+        "avatarUrl": "https://cdn.discordapp.com/avatars/222544380781658122/5e0596b4c61c324128b5e471b33f61b0.png"
+      },
+      "attachments": [],
+      "embeds": [],
+      "reactions": []
+    },
+    {
+      "id": "674439030062055444",
+      "type": "Default",
+      "timestamp": "2020-02-05T02:19:55.238+00:00",
+      "timestampEdited": null,
+      "isPinned": false,
+      "content": "#1: pulling daily stats\nPriority: High\nExample URL:\nhttps://stats.nba.com/teams/advanced/?sort=TEAM_NAME\u0026dir=-1\u0026Season=2019-20\u0026SeasonType=Regular%20Season\u0026DateFrom=12%2F06%2F2019\u0026DateTo=12%2F06%2F2019\n\nThis link we use for pulling team stats for one given day. So we set the date filter to be \u201Cto\u201D and \u201Cfrom\u201D the same date. We currently pull pace, but to futureproof ourselves, let\u2019s say we need the table (which I assume isn\u2019t any more difficult than pulling one column. If it is proving to be difficult, we can pick and choose what we need)\n\n\n#2 pulling team stats\nPriority: Med/High\nURL:\nhttps://stats.nba.com/teams/advanced/?sort=TEAM_NAME\u0026dir=-1\n\nWe probably will need this whole table.\n\n\n#3 pulling advanced team stats\nPriority: low\nURL example:\nhttps://stats.nba.com/team/1610612737/advanced/\n\nWe\u2019re pretty much interested in everything on this page. Only annoying thing is that each team has a unique page. \n\nNOTE: this one actually has the same stats as page #2 in the \u201Coverall\u201D table, but each team has a unique page which is annoying. Just wanted to throw that out there. \n\n\n#4 player statistics\nPriority: insanely low\nURL examples:\nhttps://stats.nba.com/team/1610612737/onoffcourt-advanced/\nhttps://stats.nba.com/team/1610612737/onoffcourt-summary/\nWe will probably need everything on here. And I can\u2019t stress enough how low of a priority these are.",
+      "author": {
+        "id": "222544380781658122",
+        "name": "ARiso",
+        "discriminator": "2042",
+        "isBot": false,
+        "avatarUrl": "https://cdn.discordapp.com/avatars/222544380781658122/5e0596b4c61c324128b5e471b33f61b0.png"
+      },
+      "attachments": [],
+      "embeds": [
+        {
+          "title": "Teams Advanced",
+          "url": "https://stats.nba.com/teams/advanced/?sort=TEAM_NAME\u0026dir=-1\u0026Season=2019-20\u0026SeasonType=Regular%20Season\u0026DateFrom=12%2F06%2F2019\u0026DateTo=12%2F06%2F2019",
+          "timestamp": null,
+          "description": "Home of NBA Advanced Stats - Official NBA Statistics and Advanced Analytics.",
+          "thumbnail": {
+            "url": "https://stats.nba.com/media/img/touch/stats-icon-152x152.png",
+            "width": 152,
+            "height": 152
+          },
+          "fields": []
+        },
+        {
+          "title": "Teams Advanced",
+          "url": "https://stats.nba.com/teams/advanced/?sort=TEAM_NAME\u0026dir=-1",
+          "timestamp": null,
+          "description": "Home of NBA Advanced Stats - Official NBA Statistics and Advanced Analytics.",
+          "thumbnail": {
+            "url": "https://stats.nba.com/media/img/touch/stats-icon-152x152.png",
+            "width": 152,
+            "height": 152
+          },
+          "fields": []
+        },
+        {
+          "title": "Atlanta Hawks",
+          "url": "https://stats.nba.com/team/1610612737/advanced/",
+          "timestamp": null,
+          "description": "Atlanta Hawks Official NBA Stats, Game Logs, Boxscores, Shotcharts and Videos",
+          "fields": []
+        },
+        {
+          "title": "Atlanta Hawks",
+          "url": "https://stats.nba.com/team/1610612737/onoffcourt-advanced/",
+          "timestamp": null,
+          "description": "Atlanta Hawks Official NBA Stats, Game Logs, Boxscores, Shotcharts and Videos",
+          "fields": []
+        },
+        {
+          "title": "Atlanta Hawks",
+          "url": "https://stats.nba.com/team/1610612737/onoffcourt-summary/",
+          "timestamp": null,
+          "description": "Atlanta Hawks Official NBA Stats, Game Logs, Boxscores, Shotcharts and Videos",
+          "fields": []
+        }
+      ],
+      "reactions": []
+    },
+    {
+      "id": "674439400288944128",
+      "type": "Default",
+      "timestamp": "2020-02-05T02:21:23.507+00:00",
+      "timestampEdited": null,
+      "isPinned": false,
+      "content": "@Palac that\u2019s like a year of homework lol. None of this stuff is a rush. I literally listed everything I could think of that we would use for the foreseeable future.  #3 and #4 are potentially months out.",
+      "author": {
+        "id": "222544380781658122",
+        "name": "ARiso",
+        "discriminator": "2042",
+        "isBot": false,
+        "avatarUrl": "https://cdn.discordapp.com/avatars/222544380781658122/5e0596b4c61c324128b5e471b33f61b0.png"
+      },
+      "attachments": [],
+      "embeds": [],
+      "reactions": []
+    },
+    {
+      "id": "674440978110742528",
+      "type": "Default",
+      "timestamp": "2020-02-05T02:27:39.689+00:00",
+      "timestampEdited": null,
+      "isPinned": false,
+      "content": "awesome ya this is perfect to start",
+      "author": {
+        "id": "594967425049427969",
+        "name": "Mr. Poopybutthole",
+        "discriminator": "5624",
+        "isBot": false,
+        "avatarUrl": "https://cdn.discordapp.com/avatars/594967425049427969/7f0f76872a28766557dcac7ddafc2d25.png"
+      },
+      "attachments": [],
+      "embeds": [],
+      "reactions": []
+    },
+    {
+      "id": "674441223364411392",
+      "type": "Default",
+      "timestamp": "2020-02-05T02:28:38.162+00:00",
+      "timestampEdited": null,
+      "isPinned": false,
+      "content": "Dope, and thanks for reminding me. I kept forgetting to organize that stuff for you",
+      "author": {
+        "id": "222544380781658122",
+        "name": "ARiso",
+        "discriminator": "2042",
+        "isBot": false,
+        "avatarUrl": "https://cdn.discordapp.com/avatars/222544380781658122/5e0596b4c61c324128b5e471b33f61b0.png"
+      },
+      "attachments": [],
+      "embeds": [],
+      "reactions": []
+    },
+    {
+      "id": "674456522868391936",
+      "type": "Default",
+      "timestamp": "2020-02-05T03:29:25.848+00:00",
+      "timestampEdited": "2020-02-05T03:29:50.698+00:00",
+      "isPinned": false,
+      "content": "i dont get why you guys wont use google sheets",
+      "author": {
+        "id": "331161178069925899",
+        "name": "don",
+        "discriminator": "0780",
+        "isBot": false,
+        "avatarUrl": "https://cdn.discordapp.com/avatars/331161178069925899/9456b7532fe7e68e9c781e331b76301e.png"
+      },
+      "attachments": [],
+      "embeds": [],
+      "reactions": []
+    },
+    {
+      "id": "674456589964410882",
+      "type": "Default",
+      "timestamp": "2020-02-05T03:29:41.845+00:00",
+      "timestampEdited": null,
+      "isPinned": false,
+      "content": "it literally imports the entire html table with a single line equation",
+      "author": {
+        "id": "331161178069925899",
+        "name": "don",
+        "discriminator": "0780",
+        "isBot": false,
+        "avatarUrl": "https://cdn.discordapp.com/avatars/331161178069925899/9456b7532fe7e68e9c781e331b76301e.png"
+      },
+      "attachments": [],
+      "embeds": [],
+      "reactions": []
+    },
+    {
+      "id": "674456871628963840",
+      "type": "Default",
+      "timestamp": "2020-02-05T03:30:48.999+00:00",
+      "timestampEdited": null,
+      "isPinned": false,
+      "content": "we want to use google sheets",
+      "author": {
+        "id": "671906232399036437",
+        "name": "mmarotti",
+        "discriminator": "4522",
+        "isBot": false,
+        "avatarUrl": "https://cdn.discordapp.com/embed/avatars/2.png"
+      },
+      "attachments": [],
+      "embeds": [],
+      "reactions": []
+    },
+    {
+      "id": "674456923818557470",
+      "type": "Default",
+      "timestamp": "2020-02-05T03:31:01.442+00:00",
+      "timestampEdited": null,
+      "isPinned": false,
+      "content": "but for the time being we aren\u0027t close to done with the design side",
+      "author": {
+        "id": "671906232399036437",
+        "name": "mmarotti",
+        "discriminator": "4522",
+        "isBot": false,
+        "avatarUrl": "https://cdn.discordapp.com/embed/avatars/2.png"
+      },
+      "attachments": [],
+      "embeds": [],
+      "reactions": []
+    },
+    {
+      "id": "674456960661454848",
+      "type": "Default",
+      "timestamp": "2020-02-05T03:31:10.226+00:00",
+      "timestampEdited": null,
+      "isPinned": false,
+      "content": "and google sheets is a nightmare for that in my experience",
+      "author": {
+        "id": "671906232399036437",
+        "name": "mmarotti",
+        "discriminator": "4522",
+        "isBot": false,
+        "avatarUrl": "https://cdn.discordapp.com/embed/avatars/2.png"
+      },
+      "attachments": [],
+      "embeds": [],
+      "reactions": []
+    },
+    {
+      "id": "674457053649174534",
+      "type": "Default",
+      "timestamp": "2020-02-05T03:31:32.396+00:00",
+      "timestampEdited": null,
+      "isPinned": false,
+      "content": "but its so much harder and more effort to scrape and import into excel",
+      "author": {
+        "id": "331161178069925899",
+        "name": "don",
+        "discriminator": "0780",
+        "isBot": false,
+        "avatarUrl": "https://cdn.discordapp.com/avatars/331161178069925899/9456b7532fe7e68e9c781e331b76301e.png"
+      },
+      "attachments": [],
+      "embeds": [],
+      "reactions": []
+    },
+    {
+      "id": "674457189532041217",
+      "type": "Default",
+      "timestamp": "2020-02-05T03:32:04.793+00:00",
+      "timestampEdited": null,
+      "isPinned": false,
+      "content": "double edged sword it seems",
+      "author": {
+        "id": "671906232399036437",
+        "name": "mmarotti",
+        "discriminator": "4522",
+        "isBot": false,
+        "avatarUrl": "https://cdn.discordapp.com/embed/avatars/2.png"
+      },
+      "attachments": [],
+      "embeds": [],
+      "reactions": []
+    },
+    {
+      "id": "674457345342046230",
+      "type": "Default",
+      "timestamp": "2020-02-05T03:32:41.941+00:00",
+      "timestampEdited": null,
+      "isPinned": false,
+      "content": "whatever you use to scrape will download it to a csv, then you have to figure out how to manually import that into your existing sheet which will prob get messy.  prob need VBA",
+      "author": {
+        "id": "331161178069925899",
+        "name": "don",
+        "discriminator": "0780",
+        "isBot": false,
+        "avatarUrl": "https://cdn.discordapp.com/avatars/331161178069925899/9456b7532fe7e68e9c781e331b76301e.png"
+      },
+      "attachments": [],
+      "embeds": [],
+      "reactions": []
+    },
+    {
+      "id": "674457480075542548",
+      "type": "Default",
+      "timestamp": "2020-02-05T03:33:14.064+00:00",
+      "timestampEdited": null,
+      "isPinned": false,
+      "content": "@ARiso if we want to wait to scrape until we insert efficiency influence equation and total accuracy testing, we can do that",
+      "author": {
+        "id": "671906232399036437",
+        "name": "mmarotti",
+        "discriminator": "4522",
+        "isBot": false,
+        "avatarUrl": "https://cdn.discordapp.com/embed/avatars/2.png"
+      },
+      "attachments": [],
+      "embeds": [],
+      "reactions": []
+    },
+    {
+      "id": "674457623969398800",
+      "type": "Default",
+      "timestamp": "2020-02-05T03:33:48.371+00:00",
+      "timestampEdited": null,
+      "isPinned": false,
+      "content": "@don i figured about half of that",
+      "author": {
+        "id": "671906232399036437",
+        "name": "mmarotti",
+        "discriminator": "4522",
+        "isBot": false,
+        "avatarUrl": "https://cdn.discordapp.com/embed/avatars/2.png"
+      },
+      "attachments": [],
+      "embeds": [],
+      "reactions": []
+    },
+    {
+      "id": "674457634291712036",
+      "type": "Default",
+      "timestamp": "2020-02-05T03:33:50.832+00:00",
+      "timestampEdited": null,
+      "isPinned": false,
+      "content": "okay actually nba.com isnt working",
+      "author": {
+        "id": "331161178069925899",
+        "name": "don",
+        "discriminator": "0780",
+        "isBot": false,
+        "avatarUrl": "https://cdn.discordapp.com/avatars/331161178069925899/9456b7532fe7e68e9c781e331b76301e.png"
+      },
+      "attachments": [],
+      "embeds": [],
+      "reactions": []
+    },
+    {
+      "id": "674457659423850527",
+      "type": "Default",
+      "timestamp": "2020-02-05T03:33:56.824+00:00",
+      "timestampEdited": null,
+      "isPinned": false,
+      "content": "wtf",
+      "author": {
+        "id": "671906232399036437",
+        "name": "mmarotti",
+        "discriminator": "4522",
+        "isBot": false,
+        "avatarUrl": "https://cdn.discordapp.com/embed/avatars/2.png"
+      },
+      "attachments": [],
+      "embeds": [],
+      "reactions": []
+    },
+    {
+      "id": "674457704705556491",
+      "type": "Default",
+      "timestamp": "2020-02-05T03:34:07.62+00:00",
+      "timestampEdited": null,
+      "isPinned": false,
+      "content": "with the google sheets funciton",
+      "author": {
+        "id": "331161178069925899",
+        "name": "don",
+        "discriminator": "0780",
+        "isBot": false,
+        "avatarUrl": "https://cdn.discordapp.com/avatars/331161178069925899/9456b7532fe7e68e9c781e331b76301e.png"
+      },
+      "attachments": [],
+      "embeds": [],
+      "reactions": []
+    },
+    {
+      "id": "674457753602883585",
+      "type": "Default",
+      "timestamp": "2020-02-05T03:34:19.278+00:00",
+      "timestampEdited": null,
+      "isPinned": false,
+      "content": "some sites are getting better at preventing it",
+      "author": {
+        "id": "671906232399036437",
+        "name": "mmarotti",
+        "discriminator": "4522",
+        "isBot": false,
+        "avatarUrl": "https://cdn.discordapp.com/embed/avatars/2.png"
+      },
+      "attachments": [],
+      "embeds": [],
+      "reactions": []
+    },
+    {
+      "id": "674457817930792991",
+      "type": "Default",
+      "timestamp": "2020-02-05T03:34:34.615+00:00",
+      "timestampEdited": null,
+      "isPinned": false,
+      "content": "NBA.com would make sense, a lot of people are trying to do things similarly",
+      "author": {
+        "id": "671906232399036437",
+        "name": "mmarotti",
+        "discriminator": "4522",
+        "isBot": false,
+        "avatarUrl": "https://cdn.discordapp.com/embed/avatars/2.png"
+      },
+      "attachments": [],
+      "embeds": [],
+      "reactions": []
+    },
+    {
+      "id": "674457832057339955",
+      "type": "Default",
+      "timestamp": "2020-02-05T03:34:37.983+00:00",
+      "timestampEdited": null,
+      "isPinned": false,
+      "content": "is it in HTML?",
+      "author": {
+        "id": "671906232399036437",
+        "name": "mmarotti",
+        "discriminator": "4522",
+        "isBot": false,
+        "avatarUrl": "https://cdn.discordapp.com/embed/avatars/2.png"
+      },
+      "attachments": [],
+      "embeds": [],
+      "reactions": []
+    },
+    {
+      "id": "674457977272664086",
+      "type": "Default",
+      "timestamp": "2020-02-05T03:35:12.605+00:00",
+      "timestampEdited": null,
+      "isPinned": false,
+      "content": "yeah looks like it",
+      "author": {
+        "id": "331161178069925899",
+        "name": "don",
+        "discriminator": "0780",
+        "isBot": false,
+        "avatarUrl": "https://cdn.discordapp.com/avatars/331161178069925899/9456b7532fe7e68e9c781e331b76301e.png"
+      },
+      "attachments": [],
+      "embeds": [],
+      "reactions": []
+    },
+    {
+      "id": "674457994427367424",
+      "type": "Default",
+      "timestamp": "2020-02-05T03:35:16.695+00:00",
+      "timestampEdited": null,
+      "isPinned": false,
+      "content": "yeah i see it too",
+      "author": {
+        "id": "671906232399036437",
+        "name": "mmarotti",
+        "discriminator": "4522",
+        "isBot": false,
+        "avatarUrl": "https://cdn.discordapp.com/embed/avatars/2.png"
+      },
+      "attachments": [],
+      "embeds": [],
+      "reactions": []
+    },
+    {
+      "id": "674458708058832906",
+      "type": "Default",
+      "timestamp": "2020-02-05T03:38:06.838+00:00",
+      "timestampEdited": null,
+      "isPinned": false,
+      "content": "was basketballreference.com out of date?",
+      "author": {
+        "id": "331161178069925899",
+        "name": "don",
+        "discriminator": "0780",
+        "isBot": false,
+        "avatarUrl": "https://cdn.discordapp.com/avatars/331161178069925899/9456b7532fe7e68e9c781e331b76301e.png"
+      },
+      "attachments": [],
+      "embeds": [],
+      "reactions": []
+    },
+    {
+      "id": "674458835598966825",
+      "type": "Default",
+      "timestamp": "2020-02-05T03:38:37.246+00:00",
+      "timestampEdited": null,
+      "isPinned": false,
+      "content": "not sure, haven\u0027t really used it, NBA.com seems to have everything we need so we\u0027ve been pulling from it, and the familiarity",
+      "author": {
+        "id": "671906232399036437",
+        "name": "mmarotti",
+        "discriminator": "4522",
+        "isBot": false,
+        "avatarUrl": "https://cdn.discordapp.com/embed/avatars/2.png"
+      },
+      "attachments": [],
+      "embeds": [],
+      "reactions": []
+    },
+    {
+      "id": "674458907514765343",
+      "type": "Default",
+      "timestamp": "2020-02-05T03:38:54.392+00:00",
+      "timestampEdited": null,
+      "isPinned": false,
+      "content": "key is to pull everything from the same site, because we\u0027ve seen some metrics differ from site to site, for whatever reason",
+      "author": {
+        "id": "671906232399036437",
+        "name": "mmarotti",
+        "discriminator": "4522",
+        "isBot": false,
+        "avatarUrl": "https://cdn.discordapp.com/embed/avatars/2.png"
+      },
+      "attachments": [],
+      "embeds": [],
+      "reactions": []
+    },
+    {
+      "id": "674459105305296899",
+      "type": "Default",
+      "timestamp": "2020-02-05T03:39:41.549+00:00",
+      "timestampEdited": null,
+      "isPinned": false,
+      "content": "maybe check out if you can find everything there then because it defenitely works",
+      "author": {
+        "id": "331161178069925899",
+        "name": "don",
+        "discriminator": "0780",
+        "isBot": false,
+        "avatarUrl": "https://cdn.discordapp.com/avatars/331161178069925899/9456b7532fe7e68e9c781e331b76301e.png"
+      },
+      "attachments": [],
+      "embeds": [],
+      "reactions": []
+    },
+    {
+      "id": "674459171801792512",
+      "type": "Default",
+      "timestamp": "2020-02-05T03:39:57.403+00:00",
+      "timestampEdited": null,
+      "isPinned": false,
+      "content": "",
+      "author": {
+        "id": "331161178069925899",
+        "name": "don",
+        "discriminator": "0780",
+        "isBot": false,
+        "avatarUrl": "https://cdn.discordapp.com/avatars/331161178069925899/9456b7532fe7e68e9c781e331b76301e.png"
+      },
+      "attachments": [
+        {
+          "id": "674459171210657798",
+          "url": "https://cdn.discordapp.com/attachments/671908060465201182/674459171210657798/Screen_Shot_2020-02-04_at_10.39.45_PM.png",
+          "fileName": "Screen_Shot_2020-02-04_at_10.39.45_PM.png",
+          "fileSizeBytes": 248149
+        }
+      ],
+      "embeds": [],
+      "reactions": []
+    },
+    {
+      "id": "674459275271077888",
+      "type": "Default",
+      "timestamp": "2020-02-05T03:40:22.072+00:00",
+      "timestampEdited": null,
+      "isPinned": false,
+      "content": "does the syntax allow you to pull in select rows or columns",
+      "author": {
+        "id": "671906232399036437",
+        "name": "mmarotti",
+        "discriminator": "4522",
+        "isBot": false,
+        "avatarUrl": "https://cdn.discordapp.com/embed/avatars/2.png"
+      },
+      "attachments": [],
+      "embeds": [],
+      "reactions": []
+    },
+    {
+      "id": "674459469916143640",
+      "type": "Default",
+      "timestamp": "2020-02-05T03:41:08.479+00:00",
+      "timestampEdited": null,
+      "isPinned": false,
+      "content": "no so what youd do is half these always on their on sheets and then pull from them from another sheet",
+      "author": {
+        "id": "331161178069925899",
+        "name": "don",
+        "discriminator": "0780",
+        "isBot": false,
+        "avatarUrl": "https://cdn.discordapp.com/avatars/331161178069925899/9456b7532fe7e68e9c781e331b76301e.png"
+      },
+      "attachments": [],
+      "embeds": [],
+      "reactions": []
+    },
+    {
+      "id": "674459520461701121",
+      "type": "Default",
+      "timestamp": "2020-02-05T03:41:20.53+00:00",
+      "timestampEdited": null,
+      "isPinned": false,
+      "content": "right, similar to what we do now only without the scraping",
+      "author": {
+        "id": "671906232399036437",
+        "name": "mmarotti",
+        "discriminator": "4522",
+        "isBot": false,
+        "avatarUrl": "https://cdn.discordapp.com/embed/avatars/2.png"
+      },
+      "attachments": [],
+      "embeds": [],
+      "reactions": []
+    },
+    {
+      "id": "674459599348170762",
+      "type": "Default",
+      "timestamp": "2020-02-05T03:41:39.338+00:00",
+      "timestampEdited": null,
+      "isPinned": false,
+      "content": "any idea how to go about changing links? so when a link differs from day-to-day, for example",
+      "author": {
+        "id": "671906232399036437",
+        "name": "mmarotti",
+        "discriminator": "4522",
+        "isBot": false,
+        "avatarUrl": "https://cdn.discordapp.com/embed/avatars/2.png"
+      },
+      "attachments": [],
+      "embeds": [],
+      "reactions": []
+    },
+    {
+      "id": "674459627559059467",
+      "type": "Default",
+      "timestamp": "2020-02-05T03:41:46.064+00:00",
+      "timestampEdited": null,
+      "isPinned": false,
+      "content": "because of date",
+      "author": {
+        "id": "671906232399036437",
+        "name": "mmarotti",
+        "discriminator": "4522",
+        "isBot": false,
+        "avatarUrl": "https://cdn.discordapp.com/embed/avatars/2.png"
+      },
+      "attachments": [],
+      "embeds": [],
+      "reactions": []
+    },
+    {
+      "id": "674459726570061856",
+      "type": "Default",
+      "timestamp": "2020-02-05T03:42:09.67+00:00",
+      "timestampEdited": null,
+      "isPinned": false,
+      "content": "ideally we\u0027d want maybe a quick refresh that updates to the newest day\u0027s data without having to manually pull it",
+      "author": {
+        "id": "671906232399036437",
+        "name": "mmarotti",
+        "discriminator": "4522",
+        "isBot": false,
+        "avatarUrl": "https://cdn.discordapp.com/embed/avatars/2.png"
+      },
+      "attachments": [],
+      "embeds": [],
+      "reactions": []
+    },
+    {
+      "id": "674459881713041418",
+      "type": "Default",
+      "timestamp": "2020-02-05T03:42:46.659+00:00",
+      "timestampEdited": null,
+      "isPinned": false,
+      "content": "you can make a formula that makes the current date and then concatenate that with the other part of the URL and then reference that cell in your formula",
+      "author": {
+        "id": "331161178069925899",
+        "name": "don",
+        "discriminator": "0780",
+        "isBot": false,
+        "avatarUrl": "https://cdn.discordapp.com/avatars/331161178069925899/9456b7532fe7e68e9c781e331b76301e.png"
+      },
+      "attachments": [],
+      "embeds": [],
+      "reactions": []
+    },
+    {
+      "id": "674460040484093972",
+      "type": "Default",
+      "timestamp": "2020-02-05T03:43:24.513+00:00",
+      "timestampEdited": null,
+      "isPinned": false,
+      "content": "i see",
+      "author": {
+        "id": "671906232399036437",
+        "name": "mmarotti",
+        "discriminator": "4522",
+        "isBot": false,
+        "avatarUrl": "https://cdn.discordapp.com/embed/avatars/2.png"
+      },
+      "attachments": [],
+      "embeds": [],
+      "reactions": []
+    },
+    {
+      "id": "674460074323738635",
+      "type": "Default",
+      "timestamp": "2020-02-05T03:43:32.581+00:00",
+      "timestampEdited": null,
+      "isPinned": false,
+      "content": "so you would only have to update the formula with the date",
+      "author": {
+        "id": "671906232399036437",
+        "name": "mmarotti",
+        "discriminator": "4522",
+        "isBot": false,
+        "avatarUrl": "https://cdn.discordapp.com/embed/avatars/2.png"
+      },
+      "attachments": [],
+      "embeds": [],
+      "reactions": []
+    },
+    {
+      "id": "674460095907758093",
+      "type": "Default",
+      "timestamp": "2020-02-05T03:43:37.727+00:00",
+      "timestampEdited": null,
+      "isPinned": false,
+      "content": "assuming the link doesn\u0027t change otherwise",
+      "author": {
+        "id": "671906232399036437",
+        "name": "mmarotti",
+        "discriminator": "4522",
+        "isBot": false,
+        "avatarUrl": "https://cdn.discordapp.com/embed/avatars/2.png"
+      },
+      "attachments": [],
+      "embeds": [],
+      "reactions": []
+    },
+    {
+      "id": "674460327630471201",
+      "type": "Default",
+      "timestamp": "2020-02-05T03:44:32.974+00:00",
+      "timestampEdited": null,
+      "isPinned": false,
+      "content": "depends what else it could be",
+      "author": {
+        "id": "331161178069925899",
+        "name": "don",
+        "discriminator": "0780",
+        "isBot": false,
+        "avatarUrl": "https://cdn.discordapp.com/avatars/331161178069925899/9456b7532fe7e68e9c781e331b76301e.png"
+      },
+      "attachments": [],
+      "embeds": [],
+      "reactions": [
+        {
+          "emoji": {
+            "id": null,
+            "name": "\uD83D\uDC4D",
+            "isAnimated": false,
+            "imageUrl": "https://twemoji.maxcdn.com/2/72x72/1f44d.png"
+          },
+          "count": 1
+        }
+      ]
+    },
+    {
+      "id": "674460350279843851",
+      "type": "Default",
+      "timestamp": "2020-02-05T03:44:38.374+00:00",
+      "timestampEdited": null,
+      "isPinned": false,
+      "content": "If I remember correctly we\u2019ve already had this conversation about basketball reference not having everything we need",
+      "author": {
+        "id": "222544380781658122",
+        "name": "ARiso",
+        "discriminator": "2042",
+        "isBot": false,
+        "avatarUrl": "https://cdn.discordapp.com/avatars/222544380781658122/5e0596b4c61c324128b5e471b33f61b0.png"
+      },
+      "attachments": [],
+      "embeds": [],
+      "reactions": []
+    },
+    {
+      "id": "674460360803090432",
+      "type": "Default",
+      "timestamp": "2020-02-05T03:44:40.883+00:00",
+      "timestampEdited": null,
+      "isPinned": false,
+      "content": "@ARiso we gotta talk this out more, brain is turning",
+      "author": {
+        "id": "671906232399036437",
+        "name": "mmarotti",
+        "discriminator": "4522",
+        "isBot": false,
+        "avatarUrl": "https://cdn.discordapp.com/embed/avatars/2.png"
+      },
+      "attachments": [],
+      "embeds": [],
+      "reactions": []
+    },
+    {
+      "id": "674460392382005249",
+      "type": "Default",
+      "timestamp": "2020-02-05T03:44:48.412+00:00",
+      "timestampEdited": null,
+      "isPinned": false,
+      "content": "i don\u0027t recall that conversation",
+      "author": {
+        "id": "671906232399036437",
+        "name": "mmarotti",
+        "discriminator": "4522",
+        "isBot": false,
+        "avatarUrl": "https://cdn.discordapp.com/embed/avatars/2.png"
+      },
+      "attachments": [],
+      "embeds": [],
+      "reactions": []
+    },
+    {
+      "id": "674460456743600152",
+      "type": "Default",
+      "timestamp": "2020-02-05T03:45:03.757+00:00",
+      "timestampEdited": null,
+      "isPinned": false,
+      "content": "Between mike and I",
+      "author": {
+        "id": "222544380781658122",
+        "name": "ARiso",
+        "discriminator": "2042",
+        "isBot": false,
+        "avatarUrl": "https://cdn.discordapp.com/avatars/222544380781658122/5e0596b4c61c324128b5e471b33f61b0.png"
+      },
+      "attachments": [],
+      "embeds": [],
+      "reactions": []
+    },
+    {
+      "id": "674460552684109834",
+      "type": "Default",
+      "timestamp": "2020-02-05T03:45:26.631+00:00",
+      "timestampEdited": null,
+      "isPinned": false,
+      "content": "that explains that",
+      "author": {
+        "id": "671906232399036437",
+        "name": "mmarotti",
+        "discriminator": "4522",
+        "isBot": false,
+        "avatarUrl": "https://cdn.discordapp.com/embed/avatars/2.png"
+      },
+      "attachments": [],
+      "embeds": [],
+      "reactions": []
+    },
+    {
+      "id": "674463762635292741",
+      "type": "Default",
+      "timestamp": "2020-02-05T03:58:11.943+00:00",
+      "timestampEdited": null,
+      "isPinned": false,
+      "content": "So yeah mike, nba.com just has so much more. The metrics are just so much more advanced",
+      "author": {
+        "id": "222544380781658122",
+        "name": "ARiso",
+        "discriminator": "2042",
+        "isBot": false,
+        "avatarUrl": "https://cdn.discordapp.com/avatars/222544380781658122/5e0596b4c61c324128b5e471b33f61b0.png"
+      },
+      "attachments": [],
+      "embeds": [],
+      "reactions": []
+    },
+    {
+      "id": "674463846697533461",
+      "type": "Default",
+      "timestamp": "2020-02-05T03:58:31.985+00:00",
+      "timestampEdited": null,
+      "isPinned": false,
+      "content": "Basketball reference only really covers the basics",
+      "author": {
+        "id": "222544380781658122",
+        "name": "ARiso",
+        "discriminator": "2042",
+        "isBot": false,
+        "avatarUrl": "https://cdn.discordapp.com/avatars/222544380781658122/5e0596b4c61c324128b5e471b33f61b0.png"
+      },
+      "attachments": [],
+      "embeds": [],
+      "reactions": []
+    },
+    {
+      "id": "674467343421931520",
+      "type": "Default",
+      "timestamp": "2020-02-05T04:12:25.669+00:00",
+      "timestampEdited": null,
+      "isPinned": false,
+      "content": "damn",
+      "author": {
+        "id": "331161178069925899",
+        "name": "don",
+        "discriminator": "0780",
+        "isBot": false,
+        "avatarUrl": "https://cdn.discordapp.com/avatars/331161178069925899/9456b7532fe7e68e9c781e331b76301e.png"
+      },
+      "attachments": [],
+      "embeds": [],
+      "reactions": []
+    },
+    {
+      "id": "674587236838146048",
+      "type": "Default",
+      "timestamp": "2020-02-05T12:08:50.487+00:00",
+      "timestampEdited": null,
+      "isPinned": false,
+      "content": "We can import it into any format you want. If you need to automate the calculations I\u2019d suggest using pandas and numpy rather than excel. That way you can calculate your metrics and then store that along with the raw dataset. It\u2019s fairly easily to learn and you don\u2019t need VBA.",
+      "author": {
+        "id": "594967425049427969",
+        "name": "Mr. Poopybutthole",
+        "discriminator": "5624",
+        "isBot": false,
+        "avatarUrl": "https://cdn.discordapp.com/avatars/594967425049427969/7f0f76872a28766557dcac7ddafc2d25.png"
+      },
+      "attachments": [],
+      "embeds": [],
+      "reactions": []
+    },
+    {
+      "id": "674615392898908170",
+      "type": "Default",
+      "timestamp": "2020-02-05T14:00:43.415+00:00",
+      "timestampEdited": null,
+      "isPinned": false,
+      "content": "how do you auto import? that\u2019s why i suggested VBA",
+      "author": {
+        "id": "331161178069925899",
+        "name": "don",
+        "discriminator": "0780",
+        "isBot": false,
+        "avatarUrl": "https://cdn.discordapp.com/avatars/331161178069925899/9456b7532fe7e68e9c781e331b76301e.png"
+      },
+      "attachments": [],
+      "embeds": [],
+      "reactions": []
+    },
+    {
+      "id": "674625870303985674",
+      "type": "Default",
+      "timestamp": "2020-02-05T14:42:21.423+00:00",
+      "timestampEdited": null,
+      "isPinned": false,
+      "content": "I use a few python packages that can easily dump HTML tables into a CSV",
+      "author": {
+        "id": "594967425049427969",
+        "name": "Mr. Poopybutthole",
+        "discriminator": "5624",
+        "isBot": false,
+        "avatarUrl": "https://cdn.discordapp.com/avatars/594967425049427969/7f0f76872a28766557dcac7ddafc2d25.png"
+      },
+      "attachments": [],
+      "embeds": [],
+      "reactions": []
+    },
+    {
+      "id": "674625961915973651",
+      "type": "Default",
+      "timestamp": "2020-02-05T14:42:43.265+00:00",
+      "timestampEdited": null,
+      "isPinned": false,
+      "content": "i know",
+      "author": {
+        "id": "331161178069925899",
+        "name": "don",
+        "discriminator": "0780",
+        "isBot": false,
+        "avatarUrl": "https://cdn.discordapp.com/avatars/331161178069925899/9456b7532fe7e68e9c781e331b76301e.png"
+      },
+      "attachments": [],
+      "embeds": [],
+      "reactions": []
+    },
+    {
+      "id": "674626081432797204",
+      "type": "Default",
+      "timestamp": "2020-02-05T14:43:11.76+00:00",
+      "timestampEdited": null,
+      "isPinned": false,
+      "content": "how do you auto import that csv into their already existing excel document",
+      "author": {
+        "id": "331161178069925899",
+        "name": "don",
+        "discriminator": "0780",
+        "isBot": false,
+        "avatarUrl": "https://cdn.discordapp.com/avatars/331161178069925899/9456b7532fe7e68e9c781e331b76301e.png"
+      },
+      "attachments": [],
+      "embeds": [],
+      "reactions": []
+    },
+    {
+      "id": "674626385733746732",
+      "type": "Default",
+      "timestamp": "2020-02-05T14:44:24.311+00:00",
+      "timestampEdited": null,
+      "isPinned": false,
+      "content": "You can do that with pandas",
+      "author": {
+        "id": "594967425049427969",
+        "name": "Mr. Poopybutthole",
+        "discriminator": "5624",
+        "isBot": false,
+        "avatarUrl": "https://cdn.discordapp.com/avatars/594967425049427969/7f0f76872a28766557dcac7ddafc2d25.png"
+      },
+      "attachments": [],
+      "embeds": [],
+      "reactions": []
+    },
+    {
+      "id": "674627403019976734",
+      "type": "Default",
+      "timestamp": "2020-02-05T14:48:26.851+00:00",
+      "timestampEdited": null,
+      "isPinned": false,
+      "content": "oh yeah there\u2019s a to_excel() function but idk if you can add to an existing one",
+      "author": {
+        "id": "331161178069925899",
+        "name": "don",
+        "discriminator": "0780",
+        "isBot": false,
+        "avatarUrl": "https://cdn.discordapp.com/avatars/331161178069925899/9456b7532fe7e68e9c781e331b76301e.png"
+      },
+      "attachments": [],
+      "embeds": [],
+      "reactions": []
+    },
+    {
+      "id": "674627552580468746",
+      "type": "Default",
+      "timestamp": "2020-02-05T14:49:02.509+00:00",
+      "timestampEdited": null,
+      "isPinned": false,
+      "content": "I believe you can",
+      "author": {
+        "id": "594967425049427969",
+        "name": "Mr. Poopybutthole",
+        "discriminator": "5624",
+        "isBot": false,
+        "avatarUrl": "https://cdn.discordapp.com/avatars/594967425049427969/7f0f76872a28766557dcac7ddafc2d25.png"
+      },
+      "attachments": [],
+      "embeds": [],
+      "reactions": []
+    },
+    {
+      "id": "674627739487305790",
+      "type": "Default",
+      "timestamp": "2020-02-05T14:49:47.071+00:00",
+      "timestampEdited": null,
+      "isPinned": false,
+      "content": "But once you have all your calculations done why would you need to bring it back into excel?",
+      "author": {
+        "id": "594967425049427969",
+        "name": "Mr. Poopybutthole",
+        "discriminator": "5624",
+        "isBot": false,
+        "avatarUrl": "https://cdn.discordapp.com/avatars/594967425049427969/7f0f76872a28766557dcac7ddafc2d25.png"
+      },
+      "attachments": [],
+      "embeds": [],
+      "reactions": []
+    },
+    {
+      "id": "674629933644906496",
+      "type": "Default",
+      "timestamp": "2020-02-05T14:58:30.199+00:00",
+      "timestampEdited": null,
+      "isPinned": false,
+      "content": "they only want the data. they\u2019ve already done everything in excel",
+      "author": {
+        "id": "331161178069925899",
+        "name": "don",
+        "discriminator": "0780",
+        "isBot": false,
+        "avatarUrl": "https://cdn.discordapp.com/avatars/331161178069925899/9456b7532fe7e68e9c781e331b76301e.png"
+      },
+      "attachments": [],
+      "embeds": [],
+      "reactions": []
+    },
+    {
+      "id": "674629969074192412",
+      "type": "Default",
+      "timestamp": "2020-02-05T14:58:38.646+00:00",
+      "timestampEdited": null,
+      "isPinned": false,
+      "content": "i told riso they should do it all in python",
+      "author": {
+        "id": "331161178069925899",
+        "name": "don",
+        "discriminator": "0780",
+        "isBot": false,
+        "avatarUrl": "https://cdn.discordapp.com/avatars/331161178069925899/9456b7532fe7e68e9c781e331b76301e.png"
+      },
+      "attachments": [],
+      "embeds": [],
+      "reactions": []
+    },
+    {
+      "id": "674630051895181332",
+      "type": "Default",
+      "timestamp": "2020-02-05T14:58:58.392+00:00",
+      "timestampEdited": null,
+      "isPinned": false,
+      "content": "but that\u2019s more work and they don\u2019t know python",
+      "author": {
+        "id": "331161178069925899",
+        "name": "don",
+        "discriminator": "0780",
+        "isBot": false,
+        "avatarUrl": "https://cdn.discordapp.com/avatars/331161178069925899/9456b7532fe7e68e9c781e331b76301e.png"
+      },
+      "attachments": [],
+      "embeds": [],
+      "reactions": []
+    },
+    {
+      "id": "674630255314731067",
+      "type": "Default",
+      "timestamp": "2020-02-05T14:59:46.891+00:00",
+      "timestampEdited": null,
+      "isPinned": false,
+      "content": "\uD83D\uDE42",
+      "author": {
+        "id": "671906232399036437",
+        "name": "mmarotti",
+        "discriminator": "4522",
+        "isBot": false,
+        "avatarUrl": "https://cdn.discordapp.com/embed/avatars/2.png"
+      },
+      "attachments": [],
+      "embeds": [],
+      "reactions": []
+    },
+    {
+      "id": "674630278496518150",
+      "type": "Default",
+      "timestamp": "2020-02-05T14:59:52.418+00:00",
+      "timestampEdited": null,
+      "isPinned": false,
+      "content": "At work otherwise I\u2019d pipe in",
+      "author": {
+        "id": "671906232399036437",
+        "name": "mmarotti",
+        "discriminator": "4522",
+        "isBot": false,
+        "avatarUrl": "https://cdn.discordapp.com/embed/avatars/2.png"
+      },
+      "attachments": [],
+      "embeds": [],
+      "reactions": []
+    },
+    {
+      "id": "674630310029426688",
+      "type": "Default",
+      "timestamp": "2020-02-05T14:59:59.936+00:00",
+      "timestampEdited": null,
+      "isPinned": false,
+      "content": "But yes you get it",
+      "author": {
+        "id": "671906232399036437",
+        "name": "mmarotti",
+        "discriminator": "4522",
+        "isBot": false,
+        "avatarUrl": "https://cdn.discordapp.com/embed/avatars/2.png"
+      },
+      "attachments": [],
+      "embeds": [],
+      "reactions": []
+    },
+    {
+      "id": "674670560726220810",
+      "type": "Default",
+      "timestamp": "2020-02-05T17:39:56.45+00:00",
+      "timestampEdited": null,
+      "isPinned": false,
+      "content": "yeah don spelled it out. the calculations themselves are still ever evolving. and im sure we will continuously use the data in different ways. so the priority rn is to just obtain the data",
+      "author": {
+        "id": "222544380781658122",
+        "name": "ARiso",
+        "discriminator": "2042",
+        "isBot": false,
+        "avatarUrl": "https://cdn.discordapp.com/avatars/222544380781658122/5e0596b4c61c324128b5e471b33f61b0.png"
+      },
+      "attachments": [],
+      "embeds": [],
+      "reactions": []
+    },
+    {
+      "id": "674670662778093628",
+      "type": "Default",
+      "timestamp": "2020-02-05T17:40:20.781+00:00",
+      "timestampEdited": null,
+      "isPinned": false,
+      "content": "also hes right that we dont know shit about python",
+      "author": {
+        "id": "222544380781658122",
+        "name": "ARiso",
+        "discriminator": "2042",
+        "isBot": false,
+        "avatarUrl": "https://cdn.discordapp.com/avatars/222544380781658122/5e0596b4c61c324128b5e471b33f61b0.png"
+      },
+      "attachments": [],
+      "embeds": [],
+      "reactions": []
+    },
+    {
+      "id": "674696434284494849",
+      "type": "Default",
+      "timestamp": "2020-02-05T19:22:45.187+00:00",
+      "timestampEdited": null,
+      "isPinned": false,
+      "content": "I see",
+      "author": {
+        "id": "594967425049427969",
+        "name": "Mr. Poopybutthole",
+        "discriminator": "5624",
+        "isBot": false,
+        "avatarUrl": "https://cdn.discordapp.com/avatars/594967425049427969/7f0f76872a28766557dcac7ddafc2d25.png"
+      },
+      "attachments": [],
+      "embeds": [],
+      "reactions": []
+    },
+    {
+      "id": "674696585627697192",
+      "type": "Default",
+      "timestamp": "2020-02-05T19:23:21.27+00:00",
+      "timestampEdited": null,
+      "isPinned": false,
+      "content": "How big is your excel spreadsheet right now?",
+      "author": {
+        "id": "594967425049427969",
+        "name": "Mr. Poopybutthole",
+        "discriminator": "5624",
+        "isBot": false,
+        "avatarUrl": "https://cdn.discordapp.com/avatars/594967425049427969/7f0f76872a28766557dcac7ddafc2d25.png"
+      },
+      "attachments": [],
+      "embeds": [],
+      "reactions": []
+    },
+    {
+      "id": "674697221643436032",
+      "type": "Default",
+      "timestamp": "2020-02-05T19:25:52.908+00:00",
+      "timestampEdited": null,
+      "isPinned": false,
+      "content": "too big",
+      "author": {
+        "id": "222544380781658122",
+        "name": "ARiso",
+        "discriminator": "2042",
+        "isBot": false,
+        "avatarUrl": "https://cdn.discordapp.com/avatars/222544380781658122/5e0596b4c61c324128b5e471b33f61b0.png"
+      },
+      "attachments": [],
+      "embeds": [],
+      "reactions": []
+    },
+    {
+      "id": "674697354636427264",
+      "type": "Default",
+      "timestamp": "2020-02-05T19:26:24.616+00:00",
+      "timestampEdited": null,
+      "isPinned": false,
+      "content": "file size is 630 kb",
+      "author": {
+        "id": "222544380781658122",
+        "name": "ARiso",
+        "discriminator": "2042",
+        "isBot": false,
+        "avatarUrl": "https://cdn.discordapp.com/avatars/222544380781658122/5e0596b4c61c324128b5e471b33f61b0.png"
+      },
+      "attachments": [],
+      "embeds": [],
+      "reactions": []
+    },
+    {
+      "id": "674697449016786945",
+      "type": "Default",
+      "timestamp": "2020-02-05T19:26:47.118+00:00",
+      "timestampEdited": null,
+      "isPinned": false,
+      "content": "Not that large in terms of rows except lookup formulas kinda hurt it",
+      "author": {
+        "id": "671906232399036437",
+        "name": "mmarotti",
+        "discriminator": "4522",
+        "isBot": false,
+        "avatarUrl": "https://cdn.discordapp.com/embed/avatars/2.png"
+      },
+      "attachments": [],
+      "embeds": [],
+      "reactions": []
+    },
+    {
+      "id": "674697531455963173",
+      "type": "Default",
+      "timestamp": "2020-02-05T19:27:06.773+00:00",
+      "timestampEdited": null,
+      "isPinned": false,
+      "content": "That isn\u2019t terrible^",
+      "author": {
+        "id": "671906232399036437",
+        "name": "mmarotti",
+        "discriminator": "4522",
+        "isBot": false,
+        "avatarUrl": "https://cdn.discordapp.com/embed/avatars/2.png"
+      },
+      "attachments": [],
+      "embeds": [],
+      "reactions": []
+    },
+    {
+      "id": "674697550300708874",
+      "type": "Default",
+      "timestamp": "2020-02-05T19:27:11.266+00:00",
+      "timestampEdited": null,
+      "isPinned": false,
+      "content": "and matt did a good job of simplifying as much as he could recently",
+      "author": {
+        "id": "222544380781658122",
+        "name": "ARiso",
+        "discriminator": "2042",
+        "isBot": false,
+        "avatarUrl": "https://cdn.discordapp.com/avatars/222544380781658122/5e0596b4c61c324128b5e471b33f61b0.png"
+      },
+      "attachments": [],
+      "embeds": [],
+      "reactions": []
+    },
+    {
+      "id": "674697588502560856",
+      "type": "Default",
+      "timestamp": "2020-02-05T19:27:20.374+00:00",
+      "timestampEdited": null,
+      "isPinned": false,
+      "content": "its really just a fuckton of equations, but really not that much data",
+      "author": {
+        "id": "222544380781658122",
+        "name": "ARiso",
+        "discriminator": "2042",
+        "isBot": false,
+        "avatarUrl": "https://cdn.discordapp.com/avatars/222544380781658122/5e0596b4c61c324128b5e471b33f61b0.png"
+      },
+      "attachments": [],
+      "embeds": [],
+      "reactions": []
+    },
+    {
+      "id": "674697807650619392",
+      "type": "Default",
+      "timestamp": "2020-02-05T19:28:12.623+00:00",
+      "timestampEdited": null,
+      "isPinned": false,
+      "content": "Agreed in terms of raw data it\u2019s actually rather minimal",
+      "author": {
+        "id": "671906232399036437",
+        "name": "mmarotti",
+        "discriminator": "4522",
+        "isBot": false,
+        "avatarUrl": "https://cdn.discordapp.com/embed/avatars/2.png"
+      },
+      "attachments": [],
+      "embeds": [],
+      "reactions": []
+    },
+    {
+      "id": "674697831667466291",
+      "type": "Default",
+      "timestamp": "2020-02-05T19:28:18.349+00:00",
+      "timestampEdited": null,
+      "isPinned": false,
+      "content": "We just manipulate the hell out of it",
+      "author": {
+        "id": "671906232399036437",
+        "name": "mmarotti",
+        "discriminator": "4522",
+        "isBot": false,
+        "avatarUrl": "https://cdn.discordapp.com/embed/avatars/2.png"
+      },
+      "attachments": [],
+      "embeds": [],
+      "reactions": []
+    },
+    {
+      "id": "674700040606056451",
+      "type": "Default",
+      "timestamp": "2020-02-05T19:37:05.001+00:00",
+      "timestampEdited": null,
+      "isPinned": false,
+      "content": "Ok",
+      "author": {
+        "id": "594967425049427969",
+        "name": "Mr. Poopybutthole",
+        "discriminator": "5624",
+        "isBot": false,
+        "avatarUrl": "https://cdn.discordapp.com/avatars/594967425049427969/7f0f76872a28766557dcac7ddafc2d25.png"
+      },
+      "attachments": [],
+      "embeds": [],
+      "reactions": []
+    },
+    {
+      "id": "674755372396969985",
+      "type": "Default",
+      "timestamp": "2020-02-05T23:16:57.128+00:00",
+      "timestampEdited": null,
+      "isPinned": false,
+      "content": "i wouldnt be worried, you guys are barely testing excels limits. theres spreadsheets at work that entire teams work on for options pricing that use VBA, plugins, lookups, and are multiple sheets",
+      "author": {
+        "id": "331161178069925899",
+        "name": "don",
+        "discriminator": "0780",
+        "isBot": false,
+        "avatarUrl": "https://cdn.discordapp.com/avatars/331161178069925899/9456b7532fe7e68e9c781e331b76301e.png"
+      },
+      "attachments": [],
+      "embeds": [],
+      "reactions": []
+    },
+    {
+      "id": "674755628652298250",
+      "type": "Default",
+      "timestamp": "2020-02-05T23:17:58.224+00:00",
+      "timestampEdited": null,
+      "isPinned": false,
+      "content": "We were most definitely testing excel on Matt\u2019s computer before he simplified the calculation. He couldn\u2019t do shit on it.",
+      "author": {
+        "id": "222544380781658122",
+        "name": "ARiso",
+        "discriminator": "2042",
+        "isBot": false,
+        "avatarUrl": "https://cdn.discordapp.com/avatars/222544380781658122/5e0596b4c61c324128b5e471b33f61b0.png"
+      },
+      "attachments": [],
+      "embeds": [],
+      "reactions": []
+    },
+    {
+      "id": "674755673711443982",
+      "type": "Default",
+      "timestamp": "2020-02-05T23:18:08.967+00:00",
+      "timestampEdited": null,
+      "isPinned": false,
+      "content": "I think that\u2019s his computers fault tho",
+      "author": {
+        "id": "222544380781658122",
+        "name": "ARiso",
+        "discriminator": "2042",
+        "isBot": false,
+        "avatarUrl": "https://cdn.discordapp.com/avatars/222544380781658122/5e0596b4c61c324128b5e471b33f61b0.png"
+      },
+      "attachments": [],
+      "embeds": [],
+      "reactions": []
+    },
+    {
+      "id": "674755767232102416",
+      "type": "Default",
+      "timestamp": "2020-02-05T23:18:31.264+00:00",
+      "timestampEdited": null,
+      "isPinned": false,
+      "content": "And hopefully Palac has an easy way to get it into excel",
+      "author": {
+        "id": "222544380781658122",
+        "name": "ARiso",
+        "discriminator": "2042",
+        "isBot": false,
+        "avatarUrl": "https://cdn.discordapp.com/avatars/222544380781658122/5e0596b4c61c324128b5e471b33f61b0.png"
+      },
+      "attachments": [],
+      "embeds": [],
+      "reactions": []
+    },
+    {
+      "id": "674755875617112114",
+      "type": "Default",
+      "timestamp": "2020-02-05T23:18:57.105+00:00",
+      "timestampEdited": null,
+      "isPinned": false,
+      "content": "what palac was saying is the same thing i do for the shoe scraping",
+      "author": {
+        "id": "331161178069925899",
+        "name": "don",
+        "discriminator": "0780",
+        "isBot": false,
+        "avatarUrl": "https://cdn.discordapp.com/avatars/331161178069925899/9456b7532fe7e68e9c781e331b76301e.png"
+      },
+      "attachments": [],
+      "embeds": [],
+      "reactions": []
+    },
+    {
+      "id": "674756010212327465",
+      "type": "Default",
+      "timestamp": "2020-02-05T23:19:29.195+00:00",
+      "timestampEdited": null,
+      "isPinned": false,
+      "content": "but its not an html table on nba.com. some of the values are there in html but its loaded asynchronously through javascript so its not as easy as he says it is",
+      "author": {
+        "id": "331161178069925899",
+        "name": "don",
+        "discriminator": "0780",
+        "isBot": false,
+        "avatarUrl": "https://cdn.discordapp.com/avatars/331161178069925899/9456b7532fe7e68e9c781e331b76301e.png"
+      },
+      "attachments": [],
+      "embeds": [],
+      "reactions": []
+    },
+    {
+      "id": "674792252240953344",
+      "type": "Default",
+      "timestamp": "2020-02-06T01:43:29.968+00:00",
+      "timestampEdited": null,
+      "isPinned": false,
+      "content": "Ya that will make it more complex but I can\u2019t imagine you are the first people to scrape this site. Might be able to bootleg some code.",
+      "author": {
+        "id": "594967425049427969",
+        "name": "Mr. Poopybutthole",
+        "discriminator": "5624",
+        "isBot": false,
+        "avatarUrl": "https://cdn.discordapp.com/avatars/594967425049427969/7f0f76872a28766557dcac7ddafc2d25.png"
+      },
+      "attachments": [],
+      "embeds": [],
+      "reactions": []
+    },
+    {
+      "id": "674795532853706813",
+      "type": "Default",
+      "timestamp": "2020-02-06T01:56:32.127+00:00",
+      "timestampEdited": null,
+      "isPinned": false,
+      "content": "I\u2019ll probably still try it on my own because it\u2019s good practice",
+      "author": {
+        "id": "594967425049427969",
+        "name": "Mr. Poopybutthole",
+        "discriminator": "5624",
+        "isBot": false,
+        "avatarUrl": "https://cdn.discordapp.com/avatars/594967425049427969/7f0f76872a28766557dcac7ddafc2d25.png"
+      },
+      "attachments": [],
+      "embeds": [],
+      "reactions": []
+    },
+    {
+      "id": "674799343190016020",
+      "type": "Default",
+      "timestamp": "2020-02-06T02:11:40.582+00:00",
+      "timestampEdited": null,
+      "isPinned": false,
+      "content": "http://kevincsong.com/Scraping-stats.nba.com-with-python/",
+      "author": {
+        "id": "331161178069925899",
+        "name": "don",
+        "discriminator": "0780",
+        "isBot": false,
+        "avatarUrl": "https://cdn.discordapp.com/avatars/331161178069925899/9456b7532fe7e68e9c781e331b76301e.png"
+      },
+      "attachments": [],
+      "embeds": [
+        {
+          "title": "Scraping Stats.nba.com With Python",
+          "url": "http://kevincsong.com/Scraping-stats.nba.com-with-python/",
+          "timestamp": null,
+          "description": "This is my attempt at trying to scrape NBA player data from stats.nba.com. The main challenge with scraping from stats.nba.com is that their tables are dynamic, but conveniently, python package called selenium can be used to drive the web drive and interact with the dynamic t...",
+          "fields": []
+        }
+      ],
+      "reactions": []
+    },
+    {
+      "id": "674800827575173130",
+      "type": "Default",
+      "timestamp": "2020-02-06T02:17:34.487+00:00",
+      "timestampEdited": null,
+      "isPinned": false,
+      "content": "lmao its always the chinaman",
+      "author": {
+        "id": "594967425049427969",
+        "name": "Mr. Poopybutthole",
+        "discriminator": "5624",
+        "isBot": false,
+        "avatarUrl": "https://cdn.discordapp.com/avatars/594967425049427969/7f0f76872a28766557dcac7ddafc2d25.png"
+      },
+      "attachments": [],
+      "embeds": [],
+      "reactions": []
+    },
+    {
+      "id": "674800961117749258",
+      "type": "Default",
+      "timestamp": "2020-02-06T02:18:06.326+00:00",
+      "timestampEdited": null,
+      "isPinned": false,
+      "content": "done for his example",
+      "author": {
+        "id": "331161178069925899",
+        "name": "don",
+        "discriminator": "0780",
+        "isBot": false,
+        "avatarUrl": "https://cdn.discordapp.com/avatars/331161178069925899/9456b7532fe7e68e9c781e331b76301e.png"
+      },
+      "attachments": [],
+      "embeds": [],
+      "reactions": []
+    },
+    {
+      "id": "674801092143480853",
+      "type": "Default",
+      "timestamp": "2020-02-06T02:18:37.565+00:00",
+      "timestampEdited": null,
+      "isPinned": false,
+      "content": "got the leading scorers all in a pandas dataframe",
+      "author": {
+        "id": "331161178069925899",
+        "name": "don",
+        "discriminator": "0780",
+        "isBot": false,
+        "avatarUrl": "https://cdn.discordapp.com/avatars/331161178069925899/9456b7532fe7e68e9c781e331b76301e.png"
+      },
+      "attachments": [],
+      "embeds": [],
+      "reactions": []
+    },
+    {
+      "id": "674801244661088257",
+      "type": "Default",
+      "timestamp": "2020-02-06T02:19:13.928+00:00",
+      "timestampEdited": null,
+      "isPinned": false,
+      "content": "need to fine tune it for all the tables you want. little more tedious because you have to play with the inspector",
+      "author": {
+        "id": "331161178069925899",
+        "name": "don",
+        "discriminator": "0780",
+        "isBot": false,
+        "avatarUrl": "https://cdn.discordapp.com/avatars/331161178069925899/9456b7532fe7e68e9c781e331b76301e.png"
+      },
+      "attachments": [],
+      "embeds": [],
+      "reactions": []
+    },
+    {
+      "id": "674804081033740319",
+      "type": "Default",
+      "timestamp": "2020-02-06T02:30:30.172+00:00",
+      "timestampEdited": null,
+      "isPinned": false,
+      "content": "noice",
+      "author": {
+        "id": "594967425049427969",
+        "name": "Mr. Poopybutthole",
+        "discriminator": "5624",
+        "isBot": false,
+        "avatarUrl": "https://cdn.discordapp.com/avatars/594967425049427969/7f0f76872a28766557dcac7ddafc2d25.png"
+      },
+      "attachments": [],
+      "embeds": [],
+      "reactions": []
+    },
+    {
+      "id": "674804232599109653",
+      "type": "Default",
+      "timestamp": "2020-02-06T02:31:06.308+00:00",
+      "timestampEdited": null,
+      "isPinned": false,
+      "content": "Oh sh don",
+      "author": {
+        "id": "222544380781658122",
+        "name": "ARiso",
+        "discriminator": "2042",
+        "isBot": false,
+        "avatarUrl": "https://cdn.discordapp.com/avatars/222544380781658122/5e0596b4c61c324128b5e471b33f61b0.png"
+      },
+      "attachments": [],
+      "embeds": [],
+      "reactions": []
+    },
+    {
+      "id": "674804239012200479",
+      "type": "Default",
+      "timestamp": "2020-02-06T02:31:07.837+00:00",
+      "timestampEdited": null,
+      "isPinned": false,
+      "content": "Nice",
+      "author": {
+        "id": "222544380781658122",
+        "name": "ARiso",
+        "discriminator": "2042",
+        "isBot": false,
+        "avatarUrl": "https://cdn.discordapp.com/avatars/222544380781658122/5e0596b4c61c324128b5e471b33f61b0.png"
+      },
+      "attachments": [],
+      "embeds": [],
+      "reactions": []
+    },
+    {
+      "id": "674806282208804864",
+      "type": "Default",
+      "timestamp": "2020-02-06T02:39:14.973+00:00",
+      "timestampEdited": null,
+      "isPinned": false,
+      "content": "and of course it doenst work the same with the teams page lol",
+      "author": {
+        "id": "331161178069925899",
+        "name": "don",
+        "discriminator": "0780",
+        "isBot": false,
+        "avatarUrl": "https://cdn.discordapp.com/avatars/331161178069925899/9456b7532fe7e68e9c781e331b76301e.png"
+      },
+      "attachments": [],
+      "embeds": [],
+      "reactions": []
+    },
+    {
+      "id": "680833397412724802",
+      "type": "Default",
+      "timestamp": "2020-02-22T17:48:51.216+00:00",
+      "timestampEdited": null,
+      "isPinned": false,
+      "content": "",
+      "author": {
+        "id": "594967425049427969",
+        "name": "Mr. Poopybutthole",
+        "discriminator": "5624",
+        "isBot": false,
+        "avatarUrl": "https://cdn.discordapp.com/avatars/594967425049427969/7f0f76872a28766557dcac7ddafc2d25.png"
+      },
+      "attachments": [
+        {
+          "id": "680833397228044348",
+          "url": "https://cdn.discordapp.com/attachments/671908060465201182/680833397228044348/team_adv_stats_2020-02-12.csv",
+          "fileName": "team_adv_stats_2020-02-12.csv",
+          "fileSizeBytes": 3306
+        }
+      ],
+      "embeds": [],
+      "reactions": []
+    },
+    {
+      "id": "680840970434248751",
+      "type": "Default",
+      "timestamp": "2020-02-22T18:18:56.765+00:00",
+      "timestampEdited": null,
+      "isPinned": false,
+      "content": "what is that",
+      "author": {
+        "id": "331161178069925899",
+        "name": "don",
+        "discriminator": "0780",
+        "isBot": false,
+        "avatarUrl": "https://cdn.discordapp.com/avatars/331161178069925899/9456b7532fe7e68e9c781e331b76301e.png"
+      },
+      "attachments": [],
+      "embeds": [],
+      "reactions": []
+    },
+    {
+      "id": "680841111585161369",
+      "type": "Default",
+      "timestamp": "2020-02-22T18:19:30.418+00:00",
+      "timestampEdited": null,
+      "isPinned": false,
+      "content": "palac matt and i were on a call talking about it",
+      "author": {
+        "id": "222544380781658122",
+        "name": "ARiso",
+        "discriminator": "2042",
+        "isBot": false,
+        "avatarUrl": "https://cdn.discordapp.com/avatars/222544380781658122/5e0596b4c61c324128b5e471b33f61b0.png"
+      },
+      "attachments": [],
+      "embeds": [],
+      "reactions": []
+    },
+    {
+      "id": "680841121491845138",
+      "type": "Default",
+      "timestamp": "2020-02-22T18:19:32.78+00:00",
+      "timestampEdited": null,
+      "isPinned": false,
+      "content": "palac scraped nba.com successfully",
+      "author": {
+        "id": "222544380781658122",
+        "name": "ARiso",
+        "discriminator": "2042",
+        "isBot": false,
+        "avatarUrl": "https://cdn.discordapp.com/avatars/222544380781658122/5e0596b4c61c324128b5e471b33f61b0.png"
+      },
+      "attachments": [],
+      "embeds": [],
+      "reactions": []
+    },
+    {
+      "id": "680841207055646786",
+      "type": "Default",
+      "timestamp": "2020-02-22T18:19:53.18+00:00",
+      "timestampEdited": null,
+      "isPinned": false,
+      "content": "how!",
+      "author": {
+        "id": "331161178069925899",
+        "name": "don",
+        "discriminator": "0780",
+        "isBot": false,
+        "avatarUrl": "https://cdn.discordapp.com/avatars/331161178069925899/9456b7532fe7e68e9c781e331b76301e.png"
+      },
+      "attachments": [],
+      "embeds": [],
+      "reactions": []
+    },
+    {
+      "id": "680841215322750988",
+      "type": "Default",
+      "timestamp": "2020-02-22T18:19:55.151+00:00",
+      "timestampEdited": null,
+      "isPinned": false,
+      "content": "tfti",
+      "author": {
+        "id": "331161178069925899",
+        "name": "don",
+        "discriminator": "0780",
+        "isBot": false,
+        "avatarUrl": "https://cdn.discordapp.com/avatars/331161178069925899/9456b7532fe7e68e9c781e331b76301e.png"
+      },
+      "attachments": [],
+      "embeds": [],
+      "reactions": []
+    },
+    {
+      "id": "680841336802639896",
+      "type": "Default",
+      "timestamp": "2020-02-22T18:20:24.114+00:00",
+      "timestampEdited": null,
+      "isPinned": false,
+      "content": "source code?",
+      "author": {
+        "id": "331161178069925899",
+        "name": "don",
+        "discriminator": "0780",
+        "isBot": false,
+        "avatarUrl": "https://cdn.discordapp.com/avatars/331161178069925899/9456b7532fe7e68e9c781e331b76301e.png"
+      },
+      "attachments": [],
+      "embeds": [],
+      "reactions": []
+    },
+    {
+      "id": "680841479622623245",
+      "type": "Default",
+      "timestamp": "2020-02-22T18:20:58.165+00:00",
+      "timestampEdited": "2020-02-22T18:21:19.35+00:00",
+      "isPinned": false,
+      "content": "Alright @Mr. Poopybutthole , so here\u0027s an equation you can play with.\n\nThis is all going to be the calculation of a statistic that we call \u0022Game Pace Influence\u0022. Each team gets a number as a result of any individual game.\n\nLet\u0027s say we\u0027re trying to calculate the game pace influence for a game on 2/21.\n\nNow because we\u0027re backtesting, any team statistics should have the date range of 10/22 to 2/21. 10/22 is the first day of the season.\n\nHere\u0027s a link to the team stats for that range:\nhttps://stats.nba.com/teams/advanced/?sort=TEAM_NAME\u0026dir=-1\u0026Season=2019-20\u0026SeasonType=Regular%20Season\u0026DateFrom=10%2F22%2F2019\u0026DateTo=02%2F21%2F2020\n\nFirst off, you have to calculate something we call \u0022Team Weighted Pace\u0022. It\u0027s a team statistic based on season averages.\n\nTeam Weighted Pace = (( [Team Season Pace] - [Average Pace of NBA] \u002B (( [Team Season Pace] - [Average Pace of NBA] ) / 30 )) * 2 \u002B [Average Pace of NBA]\n\nNow with team weighted pace, you should be able to calculate the game pace influence result for any individual game.\n\nTeam A Game Pace Influence = (( [Average Team Weighted Pace of Team A and B] - [Actual Pace Result for Game] ) / ( [Average Team Weighted Pace of Team A and B] - [Team A Weighted Pace] )) * ( [Absolute Value of Difference between Team A Season Pace and Team B Season Pace] / [Average Margin of Pace in All NBA Games] )\n\nTeam A Game Pace Influence = (Team B Game Pace Influence) * -1\n\nTo find \u0022Actual Pace\u0022 results for a game on 2/21, go to this link:\nhttps://stats.nba.com/teams/advanced/?sort=TEAM_NAME\u0026dir=-1\u0026Season=2019-20\u0026SeasonType=Regular%20Season\u0026DateFrom=02%2F21%2F2020\u0026DateTo=02%2F21%2F2020\nIt\u0027s the same as the team statistics page, but I just made the date range 1 game. The actual pace is going to be the same for both teams in any given game.\n\nAlso, for \u0022Average Margin of Pace in All NBA Games\u0022, Matt and I will tell you what the number for that is later today, rather than making you calculate that for the whole season lol.",
+      "author": {
+        "id": "222544380781658122",
+        "name": "ARiso",
+        "discriminator": "2042",
+        "isBot": false,
+        "avatarUrl": "https://cdn.discordapp.com/avatars/222544380781658122/5e0596b4c61c324128b5e471b33f61b0.png"
+      },
+      "attachments": [],
+      "embeds": [],
+      "reactions": [
+        {
+          "emoji": {
+            "id": "647202209162985472",
+            "name": "stonks",
+            "isAnimated": false,
+            "imageUrl": "https://cdn.discordapp.com/emojis/647202209162985472.png"
+          },
+          "count": 1
+        }
+      ]
+    },
+    {
+      "id": "680842114468544540",
+      "type": "Default",
+      "timestamp": "2020-02-22T18:23:29.524+00:00",
+      "timestampEdited": null,
+      "isPinned": false,
+      "content": "Also Don idk how he did it. But yeah we just had a quick call today, and he was just updating us on his progress. He\u0027s gonna start figuring out how to automate the process more and we\u0027re gonna put this on an AWS server. So he\u0027s getting a head start on that. And then he also wanted an equation to play around with, so I just gave him an equation to play around with above.",
+      "author": {
+        "id": "222544380781658122",
+        "name": "ARiso",
+        "discriminator": "2042",
+        "isBot": false,
+        "avatarUrl": "https://cdn.discordapp.com/avatars/222544380781658122/5e0596b4c61c324128b5e471b33f61b0.png"
+      },
+      "attachments": [],
+      "embeds": [],
+      "reactions": []
+    },
+    {
+      "id": "680842482065604611",
+      "type": "Default",
+      "timestamp": "2020-02-22T18:24:57.166+00:00",
+      "timestampEdited": null,
+      "isPinned": false,
+      "content": "damn i didn\u2019t know he was working on it. i was just lazy. i wanna see if he did it the same way  i was gonna do it",
+      "author": {
+        "id": "331161178069925899",
+        "name": "don",
+        "discriminator": "0780",
+        "isBot": false,
+        "avatarUrl": "https://cdn.discordapp.com/avatars/331161178069925899/9456b7532fe7e68e9c781e331b76301e.png"
+      },
+      "attachments": [],
+      "embeds": [],
+      "reactions": []
+    },
+    {
+      "id": "680842518241476746",
+      "type": "Default",
+      "timestamp": "2020-02-22T18:25:05.791+00:00",
+      "timestampEdited": null,
+      "isPinned": false,
+      "content": "why on a server?",
+      "author": {
+        "id": "331161178069925899",
+        "name": "don",
+        "discriminator": "0780",
+        "isBot": false,
+        "avatarUrl": "https://cdn.discordapp.com/avatars/331161178069925899/9456b7532fe7e68e9c781e331b76301e.png"
+      },
+      "attachments": [],
+      "embeds": [],
+      "reactions": []
+    },
+    {
+      "id": "680842789705220120",
+      "type": "Default",
+      "timestamp": "2020-02-22T18:26:10.513+00:00",
+      "timestampEdited": null,
+      "isPinned": false,
+      "content": "so that it can scrape once a day, and then automatically import into a google sheet.\nand palac said it would be possible to have the AWS server turn on and off on a schedule. so itll only be online like 10 min at most every day, and it wouldnt be costly at all",
+      "author": {
+        "id": "222544380781658122",
+        "name": "ARiso",
+        "discriminator": "2042",
+        "isBot": false,
+        "avatarUrl": "https://cdn.discordapp.com/avatars/222544380781658122/5e0596b4c61c324128b5e471b33f61b0.png"
+      },
+      "attachments": [],
+      "embeds": [],
+      "reactions": []
+    },
+    {
+      "id": "680842828150210683",
+      "type": "Default",
+      "timestamp": "2020-02-22T18:26:19.679+00:00",
+      "timestampEdited": null,
+      "isPinned": false,
+      "content": "its just a lot more reliable long term",
+      "author": {
+        "id": "222544380781658122",
+        "name": "ARiso",
+        "discriminator": "2042",
+        "isBot": false,
+        "avatarUrl": "https://cdn.discordapp.com/avatars/222544380781658122/5e0596b4c61c324128b5e471b33f61b0.png"
+      },
+      "attachments": [],
+      "embeds": [],
+      "reactions": []
+    },
+    {
+      "id": "680843092781301798",
+      "type": "Default",
+      "timestamp": "2020-02-22T18:27:22.772+00:00",
+      "timestampEdited": null,
+      "isPinned": false,
+      "content": "does the auto import into google sheets have anything to do with AWS cuz i\u2019m still tryna figure that one out too for shoes",
+      "author": {
+        "id": "331161178069925899",
+        "name": "don",
+        "discriminator": "0780",
+        "isBot": false,
+        "avatarUrl": "https://cdn.discordapp.com/avatars/331161178069925899/9456b7532fe7e68e9c781e331b76301e.png"
+      },
+      "attachments": [],
+      "embeds": [],
+      "reactions": []
+    },
+    {
+      "id": "680843342535196733",
+      "type": "Default",
+      "timestamp": "2020-02-22T18:28:22.318+00:00",
+      "timestampEdited": null,
+      "isPinned": false,
+      "content": "i dont think so",
+      "author": {
+        "id": "222544380781658122",
+        "name": "ARiso",
+        "discriminator": "2042",
+        "isBot": false,
+        "avatarUrl": "https://cdn.discordapp.com/avatars/222544380781658122/5e0596b4c61c324128b5e471b33f61b0.png"
+      },
+      "attachments": [],
+      "embeds": [],
+      "reactions": []
+    },
+    {
+      "id": "680843840562790423",
+      "type": "Default",
+      "timestamp": "2020-02-22T18:30:21.057+00:00",
+      "timestampEdited": null,
+      "isPinned": false,
+      "content": "ya i just run it on a small server and schedule it to boot up on AWS",
+      "author": {
+        "id": "594967425049427969",
+        "name": "Mr. Poopybutthole",
+        "discriminator": "5624",
+        "isBot": false,
+        "avatarUrl": "https://cdn.discordapp.com/avatars/594967425049427969/7f0f76872a28766557dcac7ddafc2d25.png"
+      },
+      "attachments": [],
+      "embeds": [],
+      "reactions": []
+    },
+    {
+      "id": "680843930010517672",
+      "type": "Default",
+      "timestamp": "2020-02-22T18:30:42.383+00:00",
+      "timestampEdited": null,
+      "isPinned": false,
+      "content": "its pretty easy",
+      "author": {
+        "id": "594967425049427969",
+        "name": "Mr. Poopybutthole",
+        "discriminator": "5624",
+        "isBot": false,
+        "avatarUrl": "https://cdn.discordapp.com/avatars/594967425049427969/7f0f76872a28766557dcac7ddafc2d25.png"
+      },
+      "attachments": [],
+      "embeds": [],
+      "reactions": []
+    },
+    {
+      "id": "680844013456064555",
+      "type": "Default",
+      "timestamp": "2020-02-22T18:31:02.278+00:00",
+      "timestampEdited": null,
+      "isPinned": false,
+      "content": "lemme see that code \uD83D\uDC40",
+      "author": {
+        "id": "331161178069925899",
+        "name": "don",
+        "discriminator": "0780",
+        "isBot": false,
+        "avatarUrl": "https://cdn.discordapp.com/avatars/331161178069925899/9456b7532fe7e68e9c781e331b76301e.png"
+      },
+      "attachments": [],
+      "embeds": [],
+      "reactions": []
+    },
+    {
+      "id": "680844821149253674",
+      "type": "Default",
+      "timestamp": "2020-02-22T18:34:14.847+00:00",
+      "timestampEdited": null,
+      "isPinned": false,
+      "content": "heres the table scrape i made",
+      "author": {
+        "id": "594967425049427969",
+        "name": "Mr. Poopybutthole",
+        "discriminator": "5624",
+        "isBot": false,
+        "avatarUrl": "https://cdn.discordapp.com/avatars/594967425049427969/7f0f76872a28766557dcac7ddafc2d25.png"
+      },
+      "attachments": [],
+      "embeds": [],
+      "reactions": []
+    },
+    {
+      "id": "680844945803706401",
+      "type": "Default",
+      "timestamp": "2020-02-22T18:34:44.567+00:00",
+      "timestampEdited": null,
+      "isPinned": false,
+      "content": "",
+      "author": {
+        "id": "594967425049427969",
+        "name": "Mr. Poopybutthole",
+        "discriminator": "5624",
+        "isBot": false,
+        "avatarUrl": "https://cdn.discordapp.com/avatars/594967425049427969/7f0f76872a28766557dcac7ddafc2d25.png"
+      },
+      "attachments": [
+        {
+          "id": "680844944717774848",
+          "url": "https://cdn.discordapp.com/attachments/671908060465201182/680844944717774848/tablebot.py",
+          "fileName": "tablebot.py",
+          "fileSizeBytes": 2208
+        }
+      ],
+      "embeds": [],
+      "reactions": []
+    },
+    {
+      "id": "680854409009561739",
+      "type": "Default",
+      "timestamp": "2020-02-22T19:12:20.771+00:00",
+      "timestampEdited": null,
+      "isPinned": false,
+      "content": "this is cool. where does element come from in def getTableData(driver, element):",
+      "author": {
+        "id": "331161178069925899",
+        "name": "don",
+        "discriminator": "0780",
+        "isBot": false,
+        "avatarUrl": "https://cdn.discordapp.com/avatars/331161178069925899/9456b7532fe7e68e9c781e331b76301e.png"
+      },
+      "attachments": [],
+      "embeds": [],
+      "reactions": []
+    },
+    {
+      "id": "680854471496302606",
+      "type": "Default",
+      "timestamp": "2020-02-22T19:12:35.669+00:00",
+      "timestampEdited": null,
+      "isPinned": false,
+      "content": "and how do you handle specific dates n shit",
+      "author": {
+        "id": "331161178069925899",
+        "name": "don",
+        "discriminator": "0780",
+        "isBot": false,
+        "avatarUrl": "https://cdn.discordapp.com/avatars/331161178069925899/9456b7532fe7e68e9c781e331b76301e.png"
+      },
+      "attachments": [],
+      "embeds": [],
+      "reactions": []
+    },
+    {
+      "id": "680856355753820160",
+      "type": "Default",
+      "timestamp": "2020-02-22T19:20:04.911+00:00",
+      "timestampEdited": null,
+      "isPinned": false,
+      "content": "date ranges are in the URL i believe",
+      "author": {
+        "id": "222544380781658122",
+        "name": "ARiso",
+        "discriminator": "2042",
+        "isBot": false,
+        "avatarUrl": "https://cdn.discordapp.com/avatars/222544380781658122/5e0596b4c61c324128b5e471b33f61b0.png"
+      },
+      "attachments": [],
+      "embeds": [],
+      "reactions": []
+    },
+    {
+      "id": "680856402595545148",
+      "type": "Default",
+      "timestamp": "2020-02-22T19:20:16.079+00:00",
+      "timestampEdited": null,
+      "isPinned": false,
+      "content": "\u0022\u0026DateFrom=02%2F21%2F2020\u0026DateTo=02%2F21%2F2020\u0022",
+      "author": {
+        "id": "222544380781658122",
+        "name": "ARiso",
+        "discriminator": "2042",
+        "isBot": false,
+        "avatarUrl": "https://cdn.discordapp.com/avatars/222544380781658122/5e0596b4c61c324128b5e471b33f61b0.png"
+      },
+      "attachments": [],
+      "embeds": [],
+      "reactions": []
+    },
+    {
+      "id": "680856490244177929",
+      "type": "Default",
+      "timestamp": "2020-02-22T19:20:36.976+00:00",
+      "timestampEdited": null,
+      "isPinned": false,
+      "content": "yea so are you manually fetching the URL every day because i didnt see any code for that",
+      "author": {
+        "id": "331161178069925899",
+        "name": "don",
+        "discriminator": "0780",
+        "isBot": false,
+        "avatarUrl": "https://cdn.discordapp.com/avatars/331161178069925899/9456b7532fe7e68e9c781e331b76301e.png"
+      },
+      "attachments": [],
+      "embeds": [],
+      "reactions": []
+    },
+    {
+      "id": "680856672956317788",
+      "type": "Default",
+      "timestamp": "2020-02-22T19:21:20.538+00:00",
+      "timestampEdited": null,
+      "isPinned": false,
+      "content": "i dont think hes thought out any scaling yet, he just made sure he could scrape it for now",
+      "author": {
+        "id": "222544380781658122",
+        "name": "ARiso",
+        "discriminator": "2042",
+        "isBot": false,
+        "avatarUrl": "https://cdn.discordapp.com/avatars/222544380781658122/5e0596b4c61c324128b5e471b33f61b0.png"
+      },
+      "attachments": [],
+      "embeds": [],
+      "reactions": []
+    },
+    {
+      "id": "680859476131315723",
+      "type": "Default",
+      "timestamp": "2020-02-22T19:32:28.867+00:00",
+      "timestampEdited": null,
+      "isPinned": false,
+      "content": "I have another script for that",
+      "author": {
+        "id": "594967425049427969",
+        "name": "Mr. Poopybutthole",
+        "discriminator": "5624",
+        "isBot": false,
+        "avatarUrl": "https://cdn.discordapp.com/avatars/594967425049427969/7f0f76872a28766557dcac7ddafc2d25.png"
+      },
+      "attachments": [],
+      "embeds": [],
+      "reactions": []
+    },
+    {
+      "id": "680859575351902384",
+      "type": "Default",
+      "timestamp": "2020-02-22T19:32:52.523+00:00",
+      "timestampEdited": null,
+      "isPinned": false,
+      "content": "Just passes out the url and inputs the date ranges you want",
+      "author": {
+        "id": "594967425049427969",
+        "name": "Mr. Poopybutthole",
+        "discriminator": "5624",
+        "isBot": false,
+        "avatarUrl": "https://cdn.discordapp.com/avatars/594967425049427969/7f0f76872a28766557dcac7ddafc2d25.png"
+      },
+      "attachments": [],
+      "embeds": [],
+      "reactions": []
+    },
+    {
+      "id": "680859617500463117",
+      "type": "Default",
+      "timestamp": "2020-02-22T19:33:02.572+00:00",
+      "timestampEdited": null,
+      "isPinned": false,
+      "content": "Parses*",
+      "author": {
+        "id": "594967425049427969",
+        "name": "Mr. Poopybutthole",
+        "discriminator": "5624",
+        "isBot": false,
+        "avatarUrl": "https://cdn.discordapp.com/avatars/594967425049427969/7f0f76872a28766557dcac7ddafc2d25.png"
+      },
+      "attachments": [],
+      "embeds": [],
+      "reactions": []
+    },
+    {
+      "id": "680859856311418908",
+      "type": "Default",
+      "timestamp": "2020-02-22T19:33:59.509+00:00",
+      "timestampEdited": null,
+      "isPinned": false,
+      "content": "And the element is hard coded for that table xpath for now",
+      "author": {
+        "id": "594967425049427969",
+        "name": "Mr. Poopybutthole",
+        "discriminator": "5624",
+        "isBot": false,
+        "avatarUrl": "https://cdn.discordapp.com/avatars/594967425049427969/7f0f76872a28766557dcac7ddafc2d25.png"
+      },
+      "attachments": [],
+      "embeds": [],
+      "reactions": []
+    },
+    {
+      "id": "680859916864716813",
+      "type": "Default",
+      "timestamp": "2020-02-22T19:34:13.946+00:00",
+      "timestampEdited": null,
+      "isPinned": false,
+      "content": "I\u2019ll probably change that later on",
+      "author": {
+        "id": "594967425049427969",
+        "name": "Mr. Poopybutthole",
+        "discriminator": "5624",
+        "isBot": false,
+        "avatarUrl": "https://cdn.discordapp.com/avatars/594967425049427969/7f0f76872a28766557dcac7ddafc2d25.png"
+      },
+      "attachments": [],
+      "embeds": [],
+      "reactions": []
+    },
+    {
+      "id": "681232433202724923",
+      "type": "Default",
+      "timestamp": "2020-02-23T20:14:28.762+00:00",
+      "timestampEdited": null,
+      "isPinned": false,
+      "content": "Long term thought:\nIt would probably be really hard to scrape betting sites in an effective way, right? I figure the sites themselves are very easy to scrape, but I can\u2019t imagine that the information is at all useful unless we\u2019re getting lines updated like to the minute or even faster",
+      "author": {
+        "id": "222544380781658122",
+        "name": "ARiso",
+        "discriminator": "2042",
+        "isBot": false,
+        "avatarUrl": "https://cdn.discordapp.com/avatars/222544380781658122/5e0596b4c61c324128b5e471b33f61b0.png"
+      },
+      "attachments": [],
+      "embeds": [],
+      "reactions": []
+    },
+    {
+      "id": "681232615721926825",
+      "type": "Default",
+      "timestamp": "2020-02-23T20:15:12.278+00:00",
+      "timestampEdited": "2020-02-23T20:15:28.702+00:00",
+      "isPinned": false,
+      "content": "And I just can\u2019t imagine any cost effective way to scrape a website like 100 times an hour literally 24/7",
+      "author": {
+        "id": "222544380781658122",
+        "name": "ARiso",
+        "discriminator": "2042",
+        "isBot": false,
+        "avatarUrl": "https://cdn.discordapp.com/avatars/222544380781658122/5e0596b4c61c324128b5e471b33f61b0.png"
+      },
+      "attachments": [],
+      "embeds": [],
+      "reactions": []
+    },
+    {
+      "id": "681232802007613452",
+      "type": "Default",
+      "timestamp": "2020-02-23T20:15:56.692+00:00",
+      "timestampEdited": null,
+      "isPinned": false,
+      "content": "@Mr. Poopybutthole",
+      "author": {
+        "id": "222544380781658122",
+        "name": "ARiso",
+        "discriminator": "2042",
+        "isBot": false,
+        "avatarUrl": "https://cdn.discordapp.com/avatars/222544380781658122/5e0596b4c61c324128b5e471b33f61b0.png"
+      },
+      "attachments": [],
+      "embeds": [],
+      "reactions": []
+    },
+    {
+      "id": "681312975948480534",
+      "type": "Default",
+      "timestamp": "2020-02-24T01:34:31.649+00:00",
+      "timestampEdited": null,
+      "isPinned": false,
+      "content": "my understanding is that it will continuously scrape it for the time period you define at approximately 1 cent per hour",
+      "author": {
+        "id": "671906232399036437",
+        "name": "mmarotti",
+        "discriminator": "4522",
+        "isBot": false,
+        "avatarUrl": "https://cdn.discordapp.com/embed/avatars/2.png"
+      },
+      "attachments": [],
+      "embeds": [],
+      "reactions": []
+    },
+    {
+      "id": "681477915212644390",
+      "type": "Default",
+      "timestamp": "2020-02-24T12:29:56.234+00:00",
+      "timestampEdited": null,
+      "isPinned": false,
+      "content": "Ya you could set something up like that but then you run into another cost of storing that data somewhere as it will accumulate very quickly",
+      "author": {
+        "id": "594967425049427969",
+        "name": "Mr. Poopybutthole",
+        "discriminator": "5624",
+        "isBot": false,
+        "avatarUrl": "https://cdn.discordapp.com/avatars/594967425049427969/7f0f76872a28766557dcac7ddafc2d25.png"
+      },
+      "attachments": [],
+      "embeds": [],
+      "reactions": []
+    },
+    {
+      "id": "681478029779795977",
+      "type": "Default",
+      "timestamp": "2020-02-24T12:30:23.549+00:00",
+      "timestampEdited": null,
+      "isPinned": false,
+      "content": "And from my experience that won\u2019t be cheap",
+      "author": {
+        "id": "594967425049427969",
+        "name": "Mr. Poopybutthole",
+        "discriminator": "5624",
+        "isBot": false,
+        "avatarUrl": "https://cdn.discordapp.com/avatars/594967425049427969/7f0f76872a28766557dcac7ddafc2d25.png"
+      },
+      "attachments": [],
+      "embeds": [],
+      "reactions": []
+    },
+    {
+      "id": "681478191080276013",
+      "type": "Default",
+      "timestamp": "2020-02-24T12:31:02.006+00:00",
+      "timestampEdited": "2020-02-24T12:31:30.543+00:00",
+      "isPinned": false,
+      "content": "Once per day is manageable",
+      "author": {
+        "id": "594967425049427969",
+        "name": "Mr. Poopybutthole",
+        "discriminator": "5624",
+        "isBot": false,
+        "avatarUrl": "https://cdn.discordapp.com/avatars/594967425049427969/7f0f76872a28766557dcac7ddafc2d25.png"
+      },
+      "attachments": [],
+      "embeds": [],
+      "reactions": []
+    },
+    {
+      "id": "681525662082793487",
+      "type": "Default",
+      "timestamp": "2020-02-24T15:39:39.975+00:00",
+      "timestampEdited": null,
+      "isPinned": false,
+      "content": "Yeah forget I said that. That\u2019s a long term thing and I figured it would be expensive. It\u2019s not necessary",
+      "author": {
+        "id": "222544380781658122",
+        "name": "ARiso",
+        "discriminator": "2042",
+        "isBot": false,
+        "avatarUrl": "https://cdn.discordapp.com/avatars/222544380781658122/5e0596b4c61c324128b5e471b33f61b0.png"
+      },
+      "attachments": [],
+      "embeds": [],
+      "reactions": []
+    },
+    {
+      "id": "681525774389608468",
+      "type": "Default",
+      "timestamp": "2020-02-24T15:40:06.751+00:00",
+      "timestampEdited": null,
+      "isPinned": false,
+      "content": "If anything we will do it once a day with the nba.com stuff",
+      "author": {
+        "id": "222544380781658122",
+        "name": "ARiso",
+        "discriminator": "2042",
+        "isBot": false,
+        "avatarUrl": "https://cdn.discordapp.com/avatars/222544380781658122/5e0596b4c61c324128b5e471b33f61b0.png"
+      },
+      "attachments": [],
+      "embeds": [],
+      "reactions": []
+    },
+    {
+      "id": "691809043450298378",
+      "type": "Default",
+      "timestamp": "2020-03-24T00:42:09.149+00:00",
+      "timestampEdited": null,
+      "isPinned": false,
+      "content": "@Palac i require your assistance with find_element_by_xpath. every xpath i give it gets me \u0022Message:\u0022\n\nwhat did you use for element in your script and how did you find it. im finding the object on the page i want and hitting copy xpath in the inspector",
+      "author": {
+        "id": "331161178069925899",
+        "name": "don",
+        "discriminator": "0780",
+        "isBot": false,
+        "avatarUrl": "https://cdn.discordapp.com/avatars/331161178069925899/9456b7532fe7e68e9c781e331b76301e.png"
+      },
+      "attachments": [],
+      "embeds": [],
+      "reactions": []
+    },
+    {
+      "id": "691809720868143174",
+      "type": "Default",
+      "timestamp": "2020-03-24T00:44:50.658+00:00",
+      "timestampEdited": null,
+      "isPinned": false,
+      "content": "Ok gimme 10 min",
+      "author": {
+        "id": "594967425049427969",
+        "name": "Mr. Poopybutthole",
+        "discriminator": "5624",
+        "isBot": false,
+        "avatarUrl": "https://cdn.discordapp.com/avatars/594967425049427969/7f0f76872a28766557dcac7ddafc2d25.png"
+      },
+      "attachments": [],
+      "embeds": [],
+      "reactions": []
+    },
+    {
+      "id": "691809758654758913",
+      "type": "Default",
+      "timestamp": "2020-03-24T00:44:59.667+00:00",
+      "timestampEdited": null,
+      "isPinned": false,
+      "content": "Are you on the box",
+      "author": {
+        "id": "594967425049427969",
+        "name": "Mr. Poopybutthole",
+        "discriminator": "5624",
+        "isBot": false,
+        "avatarUrl": "https://cdn.discordapp.com/avatars/594967425049427969/7f0f76872a28766557dcac7ddafc2d25.png"
+      },
+      "attachments": [],
+      "embeds": [],
+      "reactions": []
+    },
+    {
+      "id": "691809811800653905",
+      "type": "Default",
+      "timestamp": "2020-03-24T00:45:12.338+00:00",
+      "timestampEdited": null,
+      "isPinned": false,
+      "content": "on the phone with my dad but could hop on soon",
+      "author": {
+        "id": "331161178069925899",
+        "name": "don",
+        "discriminator": "0780",
+        "isBot": false,
+        "avatarUrl": "https://cdn.discordapp.com/avatars/331161178069925899/9456b7532fe7e68e9c781e331b76301e.png"
+      },
+      "attachments": [],
+      "embeds": [],
+      "reactions": []
+    },
+    {
+      "id": "691809861251498032",
+      "type": "Default",
+      "timestamp": "2020-03-24T00:45:24.128+00:00",
+      "timestampEdited": null,
+      "isPinned": false,
+      "content": "Ok",
+      "author": {
+        "id": "594967425049427969",
+        "name": "Mr. Poopybutthole",
+        "discriminator": "5624",
+        "isBot": false,
+        "avatarUrl": "https://cdn.discordapp.com/avatars/594967425049427969/7f0f76872a28766557dcac7ddafc2d25.png"
+      },
+      "attachments": [],
+      "embeds": [],
+      "reactions": []
+    },
+    {
+      "id": "691810243960635392",
+      "type": "Default",
+      "timestamp": "2020-03-24T00:46:55.373+00:00",
+      "timestampEdited": null,
+      "isPinned": false,
+      "content": "Send me the url",
+      "author": {
+        "id": "594967425049427969",
+        "name": "Mr. Poopybutthole",
+        "discriminator": "5624",
+        "isBot": false,
+        "avatarUrl": "https://cdn.discordapp.com/avatars/594967425049427969/7f0f76872a28766557dcac7ddafc2d25.png"
+      },
+      "attachments": [],
+      "embeds": [],
+      "reactions": []
+    },
+    {
+      "id": "691810307064070174",
+      "type": "Default",
+      "timestamp": "2020-03-24T00:47:10.418+00:00",
+      "timestampEdited": null,
+      "isPinned": false,
+      "content": "https://www.stadiumgoods.com/air-jordan-1-retro-high-og-85-varsity-red-bq4422-600",
+      "author": {
+        "id": "331161178069925899",
+        "name": "don",
+        "discriminator": "0780",
+        "isBot": false,
+        "avatarUrl": "https://cdn.discordapp.com/avatars/331161178069925899/9456b7532fe7e68e9c781e331b76301e.png"
+      },
+      "attachments": [],
+      "embeds": [
+        {
+          "title": "Air Jordan 1 Retro High OG \u002785 \u0022Varsity Red\u0022 - BQ4422 600 - 2020",
+          "url": "https://www.stadiumgoods.com/air-jordan-1-retro-high-og-85-varsity-red-bq4422-600",
+          "timestamp": null,
+          "description": "The Air Jordan 1 High OG \u201885 \u201CVarsity Red\u201D finds Jordan Brand returning to the original shape and styling of Michael Jordan\u2019s first signature shoe. Looking just as it did when it debuted ...",
+          "thumbnail": {
+            "url": "https://www.stadiumgoods.com/media/catalog/product/B/Q/BQ4422-600_1.png",
+            "width": 2000,
+            "height": 1200
+          },
+          "fields": []
+        }
+      ],
+      "reactions": []
+    },
+    {
+      "id": "691810502895992832",
+      "type": "Default",
+      "timestamp": "2020-03-24T00:47:57.108+00:00",
+      "timestampEdited": null,
+      "isPinned": false,
+      "content": "im trying to:\n1. get the size and prices by xpath if possible instead of parsing the entire page and selecting the 35 occurance of \u0022script\u0022 like im doing now lol\n2. select the search bar to enter stuff",
+      "author": {
+        "id": "331161178069925899",
+        "name": "don",
+        "discriminator": "0780",
+        "isBot": false,
+        "avatarUrl": "https://cdn.discordapp.com/avatars/331161178069925899/9456b7532fe7e68e9c781e331b76301e.png"
+      },
+      "attachments": [],
+      "embeds": [],
+      "reactions": []
+    },
+    {
+      "id": "691813258264576041",
+      "type": "Default",
+      "timestamp": "2020-03-24T00:58:54.039+00:00",
+      "timestampEdited": null,
+      "isPinned": false,
+      "content": "//div[@class=\u0027product-shop\u0027]//span[@class=\u0027product-sizes__detail\u0027]",
+      "author": {
+        "id": "594967425049427969",
+        "name": "Mr. Poopybutthole",
+        "discriminator": "5624",
+        "isBot": false,
+        "avatarUrl": "https://cdn.discordapp.com/avatars/594967425049427969/7f0f76872a28766557dcac7ddafc2d25.png"
+      },
+      "attachments": [],
+      "embeds": [],
+      "reactions": []
+    },
+    {
+      "id": "691813275066695720",
+      "type": "Default",
+      "timestamp": "2020-03-24T00:58:58.045+00:00",
+      "timestampEdited": null,
+      "isPinned": false,
+      "content": "try that",
+      "author": {
+        "id": "594967425049427969",
+        "name": "Mr. Poopybutthole",
+        "discriminator": "5624",
+        "isBot": false,
+        "avatarUrl": "https://cdn.discordapp.com/avatars/594967425049427969/7f0f76872a28766557dcac7ddafc2d25.png"
+      },
+      "attachments": [],
+      "embeds": [],
+      "reactions": []
+    },
+    {
+      "id": "691813834645700669",
+      "type": "Default",
+      "timestamp": "2020-03-24T01:01:11.459+00:00",
+      "timestampEdited": null,
+      "isPinned": false,
+      "content": "i got the same thing",
+      "author": {
+        "id": "331161178069925899",
+        "name": "don",
+        "discriminator": "0780",
+        "isBot": false,
+        "avatarUrl": "https://cdn.discordapp.com/avatars/331161178069925899/9456b7532fe7e68e9c781e331b76301e.png"
+      },
+      "attachments": [
+        {
+          "id": "691813834561683516",
+          "url": "https://cdn.discordapp.com/attachments/671908060465201182/691813834561683516/Screen_Shot_2020-03-23_at_9.00.59_PM.png",
+          "fileName": "Screen_Shot_2020-03-23_at_9.00.59_PM.png",
+          "fileSizeBytes": 121266
+        }
+      ],
+      "embeds": [],
+      "reactions": []
+    },
+    {
+      "id": "691814209524072448",
+      "type": "Default",
+      "timestamp": "2020-03-24T01:02:40.837+00:00",
+      "timestampEdited": null,
+      "isPinned": false,
+      "content": "//div[@class=\u0027header-tools__item header-tools__item--search\u0027]//i[@class=\u0027icon-search svg-icon\u0027]",
+      "author": {
+        "id": "594967425049427969",
+        "name": "Mr. Poopybutthole",
+        "discriminator": "5624",
+        "isBot": false,
+        "avatarUrl": "https://cdn.discordapp.com/avatars/594967425049427969/7f0f76872a28766557dcac7ddafc2d25.png"
+      },
+      "attachments": [],
+      "embeds": [],
+      "reactions": []
+    },
+    {
+      "id": "691814239551357030",
+      "type": "Default",
+      "timestamp": "2020-03-24T01:02:47.996+00:00",
+      "timestampEdited": null,
+      "isPinned": false,
+      "content": "thats the search input",
+      "author": {
+        "id": "594967425049427969",
+        "name": "Mr. Poopybutthole",
+        "discriminator": "5624",
+        "isBot": false,
+        "avatarUrl": "https://cdn.discordapp.com/avatars/594967425049427969/7f0f76872a28766557dcac7ddafc2d25.png"
+      },
+      "attachments": [],
+      "embeds": [],
+      "reactions": []
+    },
+    {
+      "id": "691815477680275488",
+      "type": "Default",
+      "timestamp": "2020-03-24T01:07:43.189+00:00",
+      "timestampEdited": null,
+      "isPinned": false,
+      "content": "ill give it  a shot",
+      "author": {
+        "id": "594967425049427969",
+        "name": "Mr. Poopybutthole",
+        "discriminator": "5624",
+        "isBot": false,
+        "avatarUrl": "https://cdn.discordapp.com/avatars/594967425049427969/7f0f76872a28766557dcac7ddafc2d25.png"
+      },
+      "attachments": [],
+      "embeds": [],
+      "reactions": []
+    },
+    {
+      "id": "691816109325680661",
+      "type": "Default",
+      "timestamp": "2020-03-24T01:10:13.785+00:00",
+      "timestampEdited": null,
+      "isPinned": false,
+      "content": "alright cool cuz its not workin for me",
+      "author": {
+        "id": "331161178069925899",
+        "name": "don",
+        "discriminator": "0780",
+        "isBot": false,
+        "avatarUrl": "https://cdn.discordapp.com/avatars/331161178069925899/9456b7532fe7e68e9c781e331b76301e.png"
+      },
+      "attachments": [],
+      "embeds": [],
+      "reactions": []
+    },
+    {
+      "id": "691816435982270485",
+      "type": "Default",
+      "timestamp": "2020-03-24T01:11:31.666+00:00",
+      "timestampEdited": null,
+      "isPinned": false,
+      "content": "im on xbox",
+      "author": {
+        "id": "331161178069925899",
+        "name": "don",
+        "discriminator": "0780",
+        "isBot": false,
+        "avatarUrl": "https://cdn.discordapp.com/avatars/331161178069925899/9456b7532fe7e68e9c781e331b76301e.png"
+      },
+      "attachments": [],
+      "embeds": [],
+      "reactions": []
+    },
+    {
+      "id": "691824562773426266",
+      "type": "Default",
+      "timestamp": "2020-03-24T01:43:49.244+00:00",
+      "timestampEdited": null,
+      "isPinned": false,
+      "content": "i got it to find the element.",
+      "author": {
+        "id": "594967425049427969",
+        "name": "Mr. Poopybutthole",
+        "discriminator": "5624",
+        "isBot": false,
+        "avatarUrl": "https://cdn.discordapp.com/avatars/594967425049427969/7f0f76872a28766557dcac7ddafc2d25.png"
+      },
+      "attachments": [],
+      "embeds": [],
+      "reactions": [
+        {
+          "emoji": {
+            "id": "596162227741130752",
+            "name": "ShockedDon",
+            "isAnimated": false,
+            "imageUrl": "https://cdn.discordapp.com/emojis/596162227741130752.png"
+          },
+          "count": 1
+        }
+      ]
+    },
+    {
+      "id": "691824629710585857",
+      "type": "Default",
+      "timestamp": "2020-03-24T01:44:05.203+00:00",
+      "timestampEdited": null,
+      "isPinned": false,
+      "content": "just trying to pull the data now",
+      "author": {
+        "id": "594967425049427969",
+        "name": "Mr. Poopybutthole",
+        "discriminator": "5624",
+        "isBot": false,
+        "avatarUrl": "https://cdn.discordapp.com/avatars/594967425049427969/7f0f76872a28766557dcac7ddafc2d25.png"
+      },
+      "attachments": [],
+      "embeds": [],
+      "reactions": []
+    },
+    {
+      "id": "691832660917485588",
+      "type": "Default",
+      "timestamp": "2020-03-24T02:15:59.992+00:00",
+      "timestampEdited": null,
+      "isPinned": false,
+      "content": "",
+      "author": {
+        "id": "594967425049427969",
+        "name": "Mr. Poopybutthole",
+        "discriminator": "5624",
+        "isBot": false,
+        "avatarUrl": "https://cdn.discordapp.com/avatars/594967425049427969/7f0f76872a28766557dcac7ddafc2d25.png"
+      },
+      "attachments": [
+        {
+          "id": "691832660598980668",
+          "url": "https://cdn.discordapp.com/attachments/671908060465201182/691832660598980668/test.py",
+          "fileName": "test.py",
+          "fileSizeBytes": 1748
+        }
+      ],
+      "embeds": [],
+      "reactions": []
+    },
+    {
+      "id": "691832876156583976",
+      "type": "Default",
+      "timestamp": "2020-03-24T02:16:51.309+00:00",
+      "timestampEdited": null,
+      "isPinned": false,
+      "content": "this works",
+      "author": {
+        "id": "594967425049427969",
+        "name": "Mr. Poopybutthole",
+        "discriminator": "5624",
+        "isBot": false,
+        "avatarUrl": "https://cdn.discordapp.com/avatars/594967425049427969/7f0f76872a28766557dcac7ddafc2d25.png"
+      },
+      "attachments": [],
+      "embeds": [],
+      "reactions": []
+    },
+    {
+      "id": "691833089705639937",
+      "type": "Default",
+      "timestamp": "2020-03-24T02:17:42.223+00:00",
+      "timestampEdited": null,
+      "isPinned": false,
+      "content": "but im not sure using the visibility function is good here",
+      "author": {
+        "id": "594967425049427969",
+        "name": "Mr. Poopybutthole",
+        "discriminator": "5624",
+        "isBot": false,
+        "avatarUrl": "https://cdn.discordapp.com/avatars/594967425049427969/7f0f76872a28766557dcac7ddafc2d25.png"
+      },
+      "attachments": [],
+      "embeds": [],
+      "reactions": []
+    },
+    {
+      "id": "691833489020026970",
+      "type": "Default",
+      "timestamp": "2020-03-24T02:19:17.427+00:00",
+      "timestampEdited": null,
+      "isPinned": false,
+      "content": "theres other wait functions that might be better for this",
+      "author": {
+        "id": "594967425049427969",
+        "name": "Mr. Poopybutthole",
+        "discriminator": "5624",
+        "isBot": false,
+        "avatarUrl": "https://cdn.discordapp.com/avatars/594967425049427969/7f0f76872a28766557dcac7ddafc2d25.png"
+      },
+      "attachments": [],
+      "embeds": [],
+      "reactions": []
+    },
+    {
+      "id": "691833492723728435",
+      "type": "Default",
+      "timestamp": "2020-03-24T02:19:18.31+00:00",
+      "timestampEdited": null,
+      "isPinned": false,
+      "content": "https://selenium-python.readthedocs.io/waits.html",
+      "author": {
+        "id": "594967425049427969",
+        "name": "Mr. Poopybutthole",
+        "discriminator": "5624",
+        "isBot": false,
+        "avatarUrl": "https://cdn.discordapp.com/avatars/594967425049427969/7f0f76872a28766557dcac7ddafc2d25.png"
+      },
+      "attachments": [],
+      "embeds": [],
+      "reactions": []
+    },
+    {
+      "id": "691835250749472838",
+      "type": "Default",
+      "timestamp": "2020-03-24T02:26:17.456+00:00",
+      "timestampEdited": null,
+      "isPinned": false,
+      "content": "oh shit",
+      "author": {
+        "id": "331161178069925899",
+        "name": "don",
+        "discriminator": "0780",
+        "isBot": false,
+        "avatarUrl": "https://cdn.discordapp.com/avatars/331161178069925899/9456b7532fe7e68e9c781e331b76301e.png"
+      },
+      "attachments": [],
+      "embeds": [],
+      "reactions": []
+    },
+    {
+      "id": "691835366205816942",
+      "type": "Default",
+      "timestamp": "2020-03-24T02:26:44.983+00:00",
+      "timestampEdited": null,
+      "isPinned": false,
+      "content": "i wonder why the visibility one worked for u and not me or maybe cuz i didn\u2019t do anything with it while it became visible in the 10 seconds",
+      "author": {
+        "id": "331161178069925899",
+        "name": "don",
+        "discriminator": "0780",
+        "isBot": false,
+        "avatarUrl": "https://cdn.discordapp.com/avatars/331161178069925899/9456b7532fe7e68e9c781e331b76301e.png"
+      },
+      "attachments": [],
+      "embeds": [],
+      "reactions": []
+    },
+    {
+      "id": "691835939814768771",
+      "type": "Default",
+      "timestamp": "2020-03-24T02:29:01.742+00:00",
+      "timestampEdited": null,
+      "isPinned": false,
+      "content": "I kind of cheated. It\u2019s not actually finding the right element. It\u2019s finding the parent element which is visible. That\u2019s why I\u2019m saying you should use other wait conditions that don\u2019t explicitly look for visible elements",
+      "author": {
+        "id": "594967425049427969",
+        "name": "Mr. Poopybutthole",
+        "discriminator": "5624",
+        "isBot": false,
+        "avatarUrl": "https://cdn.discordapp.com/avatars/594967425049427969/7f0f76872a28766557dcac7ddafc2d25.png"
+      },
+      "attachments": [],
+      "embeds": [],
+      "reactions": []
+    },
+    {
+      "id": "691836139107123271",
+      "type": "Default",
+      "timestamp": "2020-03-24T02:29:49.257+00:00",
+      "timestampEdited": null,
+      "isPinned": false,
+      "content": "okay i will explore. thank you",
+      "author": {
+        "id": "331161178069925899",
+        "name": "don",
+        "discriminator": "0780",
+        "isBot": false,
+        "avatarUrl": "https://cdn.discordapp.com/avatars/331161178069925899/9456b7532fe7e68e9c781e331b76301e.png"
+      },
+      "attachments": [],
+      "embeds": [],
+      "reactions": []
+    }
+  ],
+  "messageCount": 192
+}

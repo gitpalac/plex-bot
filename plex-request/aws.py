@@ -72,6 +72,7 @@ class Queue:
 
 
 if __name__ == '__main__':
-    # Notification()
-    import sys
-    print(sys.path)
+    plexq = Queue('plex_queue')
+    for i in plexq.get_messages():
+        print(i)
+        break
