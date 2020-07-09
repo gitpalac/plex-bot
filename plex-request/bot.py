@@ -37,7 +37,7 @@ async def request(ctx, content_type, *args):
                'created_at' : str(ctx.message.created_at),
                'edited_at' : str(ctx.message.edited_at),
                'jump_url' : ctx.message.jump_url,
-               'created_by' : ctx.message.author.name,
+               'created_by' : ctx.message.author.id,
                }
     await ctx.message.add_reaction('👍')
     response = f"""Is this what you are looking for?\n"""
@@ -173,7 +173,7 @@ async def on_reaction_add(reaction, user):
                     else:
                         continue
                 for item in request_queue:
-                    if user.name == item['created_by']:
+                    if user.id == item['created_by']:
                         if reaction.message.id == item['result_message_id']:
                             request_queue.remove(item)
                             await reaction.message.channel.send(
@@ -194,7 +194,7 @@ async def on_reaction_add(reaction, user):
                     else:
                         continue
                 for item in request_queue:
-                    if user.name == item['created_by']:
+                    if user.id == item['created_by']:
                         if reaction.message.id == item['result_message_id']:
                             Notification('plex-lambda', item).send()
                             request_queue.remove(item)
@@ -244,12 +244,12 @@ async def hack_error(ctx, error):
 if __name__ == '__main__':
     load_dotenv()
     parser = argparse.ArgumentParser()
-    parser.add_argument('--mode', help='run dev enviroment')
+    parser.add_argument('-m', help='run dev enviroment')
     prefix = ''
     args = parser.parse_args()
-    if args.mode:
-        if args.mode == 'dev':
-            print(f'Running in {args.mode} mode.')
+    if args.m:
+        if args.m == 'dev':
+            print(f'Running in {args.m} mode.')
             prefix = 'DEV_'
 
     request_queue = []

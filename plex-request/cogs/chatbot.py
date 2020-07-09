@@ -15,11 +15,11 @@ class Chat(commands.Cog):
 
     def __init__(self, client):
         parser = argparse.ArgumentParser()
-        parser.add_argument('--mode', help='run dev enviroment')
+        parser.add_argument('-m', help='run dev enviroment')
         prefix = ''
         args = parser.parse_args()
-        if args.mode:
-            if args.mode == 'dev':
+        if args.m:
+            if args.m == 'dev':
                 prefix = 'DEV_'
         load_dotenv()
         working_dir = os.getenv(prefix + 'WORKING_DIR')

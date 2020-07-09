@@ -39,7 +39,15 @@ class Task(commands.Cog):
                 print(f"Searching for {title + ' ' + str(msg['year'])}")
                 pirate = parrot.PirateClient()
                 pirate.search(title + ' ' + str(msg['year']))
-                torrent = pirate.best_match()
+                try:
+                    torrent = pirate.best_match()
+                except IndexError:
+                    keywords =  unicodedata.normalize('NFD',
+                                                      (' '.join(msg['keywords']))
+                                                      .encode('ascii', 'ignore')
+                                                      .decode("utf-8"))
+                    pirate.search(keywords + ' ' + str(msg['year']))
+                    torrent = pirate.best_match()
                 torrent['imdb_title'] = msg['title']
                 torrent['image_url'] = msg['image_url']
                 torrent['year'] = msg['year']
@@ -48,6 +56,15 @@ class Task(commands.Cog):
                 tor.download(torrent)
                 self.download_queue.append(torrent)
             except Exception as e:
+                if isinstance(e, IndexError):
+                    reason = 'no valid download links were found.'
+                elif isinstance(e, parrot.SpaceLimitError):
+                    reason = e
+                else:
+                    reason = 'of an unknown error.'
+                requestor = self.bot.get_user(msg['created_by'])
+                await self.bot.get_channel(727546317970341969) \
+                    .send(f"""Sorry {requestor.mention}, but I was not able to download the title "{msg['title']}" because {reason}.. 😢""")
                 print(f'Issue downloading {title} from queue --{e}')
                 continue
 
