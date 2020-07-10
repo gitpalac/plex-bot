@@ -32,7 +32,7 @@ class Chat(commands.Cog):
                                    'response_selection_method' :
                                        response_selection.get_most_frequent_response,
                                    'default_response': 'I am sorry, but I do not understand.',
-                                   'maximum_similarity_threshold': 0.90}])
+                                   'maximum_similarity_threshold': 0.93}])
 
         self.trainer = ListTrainer(self.chatbot)
         print('Training ChatBot...')
@@ -64,7 +64,7 @@ class Chat(commands.Cog):
                 if botuser.mentioned_in(message):
                     message_content = None
                     for usr in message.mentions:
-                        message_content = message.content.replace(f'<@!{usr.id}>','').strip()
+                        message_content = message.content.replace(f'<@{usr.id}>','').strip()
                     print(f"Message Recieved: {message_content}")
                     await message.channel.send(self.chatbot.get_response(message_content))
 

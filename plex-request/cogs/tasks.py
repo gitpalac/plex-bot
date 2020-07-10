@@ -75,7 +75,7 @@ class Task(commands.Cog):
         await self.bot.wait_until_ready()
         try:
             tor = parrot.TorrentClient()
-            for torrent in tor.torrents:
+            for torrent in tor.get_torrents('completed'):
                 for download in self.download_queue:
                     dl_magnet = download['magnet'].split('&')[0].lower()
                     to_magnet = torrent['magnet_uri'].split('&')[0].lower()
