@@ -255,7 +255,7 @@ if __name__ == '__main__':
     request_queue = []
     TOKEN = os.getenv(prefix + 'DISCORD_TOKEN')
     working_dir = os.getenv(prefix + 'WORKING_DIR')
-    content_types = ['movie']
+    content_types = ['movie', 'tv-show']
     # COGS
     for filename in os.listdir(os.path.join(working_dir, 'plex-request/cogs')):
         if filename.endswith('.py'):
