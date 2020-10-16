@@ -10,7 +10,7 @@ import argparse
 import random
 
 bot = commands.Bot(command_prefix='+')
-
+logging.basicConfig(level=logging.DEBUG)
 
 ## CHECKS
 def check_request(ctx):
@@ -18,7 +18,8 @@ def check_request(ctx):
     request = request.split('|')
     if len(request) > 1:
         return request[1] in content_types and len(request) > 2
-    else: return False
+    else:
+        return False
 
 ## COMMANDS
 @bot.command(name='request',
@@ -41,7 +42,7 @@ async def request(ctx, content_type, *args):
                }
     await ctx.message.add_reaction('👍')
     response = f"""Is this what you are looking for?\n"""
-    print(f'{ctx.author} added a request : {payload}')
+    logging.info(f'{ctx.author} added a request : {payload}')
 
     results = MediaClient(**payload)
     for movie in results.movies:
@@ -135,7 +136,7 @@ async def unload(ctx, extension):
 ## EVENTS
 @bot.event
 async def on_ready():
-    print(f'{bot.user.name} Connected to Palac+ Discord')
+    logging.info(f'{bot.user.name} Connected to Palac+ Discord')
 
 @bot.event
 async def on_member_join(member):
@@ -147,17 +148,10 @@ async def on_member_join(member):
 @bot.event
 async def on_command_error(ctx, error):
     if isinstance(error, commands.CommandNotFound):
-        print(error)
+        logging.warning(error)
         await ctx.channel.send('wut?')
     else:
-        print(type(error), error)
-
-# COMMENTED FOR DEBUG
-# @bot.event
-# async def on_error(event, *args, **kwargs):
-#     print(event, args, kwargs)
-#     with open('err.log', 'a') as f:
-#         f.write(f'Unhandled message: {args[0]}\n')
+        logging.error(type(error), error)
 
 @bot.event
 async def on_reaction_add(reaction, user):
@@ -168,44 +162,46 @@ async def on_reaction_add(reaction, user):
                     if r.emoji == '✅' and r.count > 1:
                         try: await r.remove(user)
                         except Exception as e:
-                            print(e)
+                            logging.error(e)
                             continue
                     else:
                         continue
                 for item in request_queue:
+                    logging.info('deny', user.id, item, flush=True)
                     if user.id == item['created_by']:
                         if reaction.message.id == item['result_message_id']:
                             request_queue.remove(item)
                             await reaction.message.channel.send(
                                 f"Sorry about that {user.name}.\nTry submitting another request with more keywords.")
-                            print(f'Message {reaction.message.id} removed from queue')
+                            logging.info(f'Message {reaction.message.id} removed from queue')
                         else:
-                            print('No queue item found.')
+                            logging.info('No queue item found.')
                     else:
-                        print('This user has not submitted a request.')
+                        logging.info('This user has not submitted a request.')
 
             elif reaction.emoji == '✅':
                 for r in reaction.message.reactions:
                     if r.emoji == '❌' and r.count > 1:
                         try: await r.remove(user)
                         except Exception as e:
-                            print(e)
+                            logging.error(e)
                             continue
                     else:
                         continue
                 for item in request_queue:
+                    logging.info('confrim', user.id,item, flush=True)
                     if user.id == item['created_by']:
                         if reaction.message.id == item['result_message_id']:
                             Notification('plex-lambda', item).send()
                             request_queue.remove(item)
                             await reaction.message.channel.send(f"Confirmed.\nYour submission was sent, {user.name}.\nCheck back later for updates.")
-                            print(f'Message {reaction.message.id} is now confirmed submission')
+                            logging.info(f'Message {reaction.message.id} is now confirmed submission')
                         else:
-                            print('No queue item found.')
+                            logging.info('No queue item found.')
                     else:
-                        print('This user has not submitted a request.')
+                        logging.info('This user has not submitted a request.')
             else:
-                print('reaction ignored')
+                logging.info('reaction ignored')
 
 
 ### ERRORS
@@ -215,7 +211,7 @@ async def selfdestruct_error(ctx, error):
         await ctx.channel.send('Please specify the amount of messages to delete.')
     else:
         await ctx.send_help(ctx.command)
-        print(error)
+        logging.error(error)
 
 @request.error
 async def request_error(ctx, error):
@@ -236,7 +232,7 @@ async def hack_error(ctx, error):
         await ctx.send(response, tts=True)
         await ctx.message.add_reaction('🤡')
     else:
-        print(error)
+        logging.error(error)
         await ctx.send_help(ctx.command)
 
 
@@ -249,9 +245,8 @@ if __name__ == '__main__':
     args = parser.parse_args()
     if args.m:
         if args.m == 'dev':
-            print(f'Running in {args.m} mode.')
+            logging.info(f'Running in {args.m} mode.')
             prefix = 'DEV_'
-
     request_queue = []
     TOKEN = os.getenv(prefix + 'DISCORD_TOKEN')
     working_dir = os.getenv(prefix + 'WORKING_DIR')

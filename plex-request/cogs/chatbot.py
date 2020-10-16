@@ -64,7 +64,7 @@ class Chat(commands.Cog):
                 if botuser.mentioned_in(message):
                     message_content = None
                     for usr in message.mentions:
-                        message_content = message.content.replace(f'<@!{usr.id}>','').replace(f'<@{usr.id}', '').strip()
+                        message_content = message.content.replace(f'<@!{usr.id}>','').replace(f'<@{usr.id}>', '').strip()
                     print(f"Message Recieved: {message_content}")
                     await message.channel.send(self.chatbot.get_response(message_content))
 
