@@ -8,9 +8,9 @@ from query import MediaClient
 from aws import Notification, Queue
 import argparse
 import random
+from datetime import datetime
 
 bot = commands.Bot(command_prefix='+')
-logging.basicConfig(level=logging.DEBUG)
 
 ## CHECKS
 def check_request(ctx):
@@ -245,13 +245,17 @@ if __name__ == '__main__':
     args = parser.parse_args()
     if args.m:
         if args.m == 'dev':
-            logging.info(f'Running in {args.m} mode.')
+            print(f'Running in {args.m} mode.')
             prefix = 'DEV_'
     request_queue = []
-    TOKEN = os.getenv(prefix + 'DISCORD_TOKEN')
-    working_dir = os.getenv(prefix + 'WORKING_DIR')
+    TOKEN = os.getenv(prefix+'DISCORD_TOKEN')
+    working_dir = os.getenv(prefix+'WORKING_DIR')
+    log = os.getenv(prefix+'LOG')
+    logging.basicConfig(filename=log.format(datetime.now()),
+                        level=logging.INFO)
+    logger = logging.getLogger(__name__)
     content_types = ['movie', 'tv-show']
-    # COGS
+    # Load Discord COGS
     for filename in os.listdir(os.path.join(working_dir, 'plex_request/cogs')):
         if filename.endswith('.py'):
             bot.load_extension(f'cogs.{filename[:-3]}')

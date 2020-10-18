@@ -5,7 +5,6 @@ import sys
 import json
 import logging
 import unicodedata
-logger = logging.getLogger(__name__)
 try:
     sys.path.insert(0, "/home/localadmin/private/scripts/torrent-pirate")
 except Exception as e:
@@ -31,7 +30,7 @@ class Task(commands.Cog):
     @tasks.loop(minutes=60)
     async def batch_download(self):
         await self.bot.wait_until_ready()
-        logger.info('downloading from queue...')
+        logging.info('downloading from queue...')
         queue = Queue('plex_queue')
         messages = queue.get_messages()
         for msg in messages:
@@ -39,7 +38,7 @@ class Task(commands.Cog):
                 msg = json.loads(msg['Body'])
                 msg = json.loads(msg['Records'][0]['Sns']['Message'], encoding='utf-8')
                 title = unicodedata.normalize('NFD', msg['title']).encode('ascii', 'ignore').decode("utf-8")
-                logger.info(f"Searching for {title + ' ' + str(msg['year'])}")
+                logging.info(f"Searching for {title + ' ' + str(msg['year'])}")
                 pirate = parrot.PirateClient()
                 pirate.search(title + ' ' + str(msg['year']))
                 try:
@@ -68,13 +67,13 @@ class Task(commands.Cog):
                 requestor = self.bot.get_user(msg['created_by'])
                 await self.bot.get_channel(self.updates_channel_id) \
                     .send(f"""Sorry {requestor.mention}, but I was not able to download the title "{msg['title']}" because {reason}.. 😢""")
-                logger.error(f'Issue downloading {title} from queue --{e}')
+                logging.error(f'Issue downloading {title} from queue --{e}')
                 continue
 
 
     @tasks.loop(minutes=20)
     async def check_dl_status(self):
-        logger.info('checking for completed or stalled downloads...')
+        logging.info('checking for completed or stalled downloads...')
         await self.bot.wait_until_ready()
         channel = self.bot.get_channel(self.updates_channel_id)  ##UPDATES
         try:
@@ -84,7 +83,7 @@ class Task(commands.Cog):
                     dl_magnet = download['magnet'].split('&')[0].lower()
                     to_magnet = torrent['magnet_uri'].split('&')[0].lower()
                     if dl_magnet == to_magnet:
-                        logger.info(f"{torrent['name']} was downloaded successfully")
+                        logging.info(f"{torrent['name']} was downloaded successfully")
                         self.download_queue.remove(download)
                         embed = discord.Embed(title=download['imdb_title'],
                                               colour=discord.Colour.teal())
@@ -99,9 +98,9 @@ class Task(commands.Cog):
                     if dl_magnet == to_magnet:
                         tor.delete(torrent)
                         self.download_queue.remove(download)
-                        logger.info(f"{torrent['name']} stalled and was removed")
+                        logging.info(f"{torrent['name']} stalled and was removed")
         except Exception as e:
-            logger.info(f'Issue checking DL status --{e}')
+            logging.info(f'Issue checking DL status --{e}')
 
 
     @commands.command(name='download')
@@ -114,7 +113,7 @@ class Task(commands.Cog):
             await self.bot.get_channel(self.updates_channel_id) \
                 .send('Media Download Started')
         except Exception as e:
-            logger.error(e)
+            logging.error(e)
 
 
 def setup(client):

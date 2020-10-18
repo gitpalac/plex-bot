@@ -1,0 +1,6 @@
+TODO
+
+1. Setup global configs
+2. Replace hard coded variables from all modules.
+3. Dockerize app
+4. Movie Recommendation engine

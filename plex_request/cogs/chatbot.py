@@ -11,9 +11,6 @@ from dotenv import load_dotenv
 import argparse
 from models import user
 
-logger = logging.getLogger(__name__)
-
-
 
 class Chat(commands.Cog):
 
@@ -39,10 +36,10 @@ class Chat(commands.Cog):
                                    'maximum_similarity_threshold': 0.85}])
 
         self.trainer = ListTrainer(self.chatbot)
-        logger.info('Training ChatBot...')
+        logging.info('Training ChatBot...')
         for filename in os.listdir(data_dir):
             if filename.endswith('.json'):
-                logger.info(f'Loading this file: {filename}')
+                logging.info(f'Loading this file: {filename}')
                 with open(os.path.join(data_dir, filename)) as jsonf:
                     data = json.load(jsonf)
                     user_messages = []
@@ -57,7 +54,7 @@ class Chat(commands.Cog):
                     self.trainer.train([m.content for m in user_messages])
 
             elif filename.endswith('.csv'):
-                logger.info(f'Loading this file: {filename}')
+                logging.info(f'Loading this file: {filename}')
                 training = []
                 with open(os.path.join(data_dir, filename)) as csvf:
                     csvreader = csv.reader(csvf, delimiter=',')
@@ -75,7 +72,7 @@ class Chat(commands.Cog):
                     message_content = None
                     for usr in message.mentions:
                         message_content = message.content.replace(f'<@!{usr.id}>','').replace(f'<@{usr.id}>', '').strip()
-                    logger.info(f"Message Recieved: {message_content}")
+                    logging.info(f"Message Recieved: {message_content}")
                     await message.channel.send(self.chatbot.get_response(message_content))
 
                 elif message.type == discord.MessageType.default:

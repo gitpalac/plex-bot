@@ -3,13 +3,12 @@ import json
 import os
 from dotenv import load_dotenv
 import logging
-logger = logging.getLogger(__name__)
 
 class Movie:
 
     def __init__(self, **metadata):
         self.title = metadata.get('title', None)
-        logger.info(f'Found Movie: {self.title}') ###DEL
+        logging.info(f'Found Movie: {self.title}') ###DEL
         self.image = metadata.get('image', {})
         self.titleType = metadata.get('titleType', 'NA')
         self.year = metadata.get('year', 'NA')
@@ -31,7 +30,7 @@ class MediaClient:
         assert len(self.keywords) >= 1
         assert len(self.keywords) > 1 or len(self.keywords[0]) > 1
 
-        logger.info(f'Querying Media with keywords: {self.keywords}')
+        logging.info(f'Querying Media with keywords: {self.keywords}')
         query = ' '.join(self.keywords)
 
         url = os.getenv('RAPID_API_URL')
@@ -49,10 +48,10 @@ class MediaClient:
             self.movies, self.tvshows = self.parse_results()
 
         else:
-            logger.error(f'Error Response {response.status_code}')
+            logging.error(f'Error Response {response.status_code}')
 
     def parse_results(self):
-        logger.info('parsing results')
+        logging.info('parsing results')
         movies = []
         tvshows = []
         for result in self.results:
