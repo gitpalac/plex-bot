@@ -9,7 +9,7 @@ import csv
 import os
 from dotenv import load_dotenv
 import argparse
-from plexrequest.models import user
+from models import user
 
 logger = logging.getLogger(__name__)
 
@@ -27,7 +27,7 @@ class Chat(commands.Cog):
                 prefix = 'DEV_'
         load_dotenv()
         working_dir = os.getenv(prefix + 'WORKING_DIR')
-        data_dir = os.path.join(working_dir, 'plexrequest/data')
+        data_dir = os.path.join(working_dir, 'plex_request/data')
         self.bot = client
         self.chatbot = ChatBot('PalacBot',
                                storage_adapter='chatterbot.storage.SQLStorageAdapter',
@@ -47,14 +47,14 @@ class Chat(commands.Cog):
                     data = json.load(jsonf)
                     user_messages = []
                     for raw_message in data['messages']:
-                        message_obj = UserMessage(raw_message)
+                        message_obj = user.UserMessage(raw_message)
                         if not message_obj.hasUrl and len(message_obj.content) > 0:
                             if user_messages:
                                 if user_messages[-1].author_id == message_obj.author_id:
                                     user_messages[-1].append_content(message_obj.content)
                             else:
                                 user_messages.append(message_obj)
-                    self.trainer.train(user_messages)
+                    self.trainer.train([m.content for m in user_messages])
 
             elif filename.endswith('.csv'):
                 logger.info(f'Loading this file: {filename}')
