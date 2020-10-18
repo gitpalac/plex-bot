@@ -23,6 +23,10 @@ class Task(commands.Cog):
         self.download_queue = []
         self.batch_download.start()
         self.check_dl_status.start()
+        print(self.bot.guilds)
+        self.updates_channel_id = 727546317970341969
+            # discord.utils.get(bot.text_channels,
+            #                   name="Updates")
 
     @tasks.loop(minutes=60)
     async def batch_download(self):
@@ -62,7 +66,7 @@ class Task(commands.Cog):
                 else:
                     reason = 'of an unknown error.'
                 requestor = self.bot.get_user(msg['created_by'])
-                await self.bot.get_channel(727546317970341969) \
+                await self.bot.get_channel(self.updates_channel_id) \
                     .send(f"""Sorry {requestor.mention}, but I was not able to download the title "{msg['title']}" because {reason}.. 😢""")
                 logger.error(f'Issue downloading {title} from queue --{e}')
                 continue
@@ -70,9 +74,9 @@ class Task(commands.Cog):
 
     @tasks.loop(minutes=20)
     async def check_dl_status(self):
-        logger.info('checking for completed or stalled downloads...', flush=True)
+        logger.info('checking for completed or stalled downloads...')
         await self.bot.wait_until_ready()
-        channel = self.bot.get_channel(727546317970341969)  ##UPDATES
+        channel = self.bot.get_channel(self.updates_channel_id)  ##UPDATES
         try:
             tor = parrot.TorrentClient()
             for torrent in tor.get_torrents('completed'):
@@ -107,7 +111,7 @@ class Task(commands.Cog):
             tor = parrot.TorrentClient()
             tor.set_savepath(save_path)
             tor.download(torrent)
-            await self.bot.get_channel(727546317970341969) \
+            await self.bot.get_channel(self.updates_channel_id) \
                 .send('Media Download Started')
         except Exception as e:
             logger.error(e)

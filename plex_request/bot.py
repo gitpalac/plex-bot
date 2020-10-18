@@ -167,7 +167,7 @@ async def on_reaction_add(reaction, user):
                     else:
                         continue
                 for item in request_queue:
-                    logging.info('deny', user.id, item, flush=True)
+                    logging.info('deny', user.id, item)
                     if user.id == item['created_by']:
                         if reaction.message.id == item['result_message_id']:
                             request_queue.remove(item)
@@ -189,7 +189,7 @@ async def on_reaction_add(reaction, user):
                     else:
                         continue
                 for item in request_queue:
-                    logging.info('confrim', user.id,item, flush=True)
+                    logging.info('confrim', user.id,item)
                     if user.id == item['created_by']:
                         if reaction.message.id == item['result_message_id']:
                             Notification('plex-lambda', item).send()
@@ -252,7 +252,7 @@ if __name__ == '__main__':
     working_dir = os.getenv(prefix + 'WORKING_DIR')
     content_types = ['movie', 'tv-show']
     # COGS
-    for filename in os.listdir(os.path.join(working_dir, 'plex-request/cogs')):
+    for filename in os.listdir(os.path.join(working_dir, 'plexrequest/cogs')):
         if filename.endswith('.py'):
             bot.load_extension(f'cogs.{filename[:-3]}')
     bot.run(TOKEN)
