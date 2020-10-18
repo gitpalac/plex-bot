@@ -4,7 +4,7 @@ with open("README.txt", "r") as fh:
     long_description = fh.read()
 
 setuptools.setup(
-    name="plex-automation", # Replace with your own username
+    name="plex-bot", # Replace with your own username
     version="0.0.1",
     author="Mike Palacio",
     author_email="mpalacio123@gmail.com",
