@@ -20,7 +20,6 @@ class Movie:
         self.runtime_min = self.runtime_total % 60
 
 
-
 class MediaClient:
 
     def __init__(self, **kwargs):
@@ -33,15 +32,22 @@ class MediaClient:
         logging.info(f'Querying Media with keywords: {self.keywords}')
         query = ' '.join(self.keywords)
 
-        url = os.getenv('RAPID_API_URL')
-        querystring = {"q": query}
-
-        headers = {
+        self.url = os.getenv('RAPID_API_URL')
+        self.querystring = {"q": query}
+        self.movies = None
+        self.tvshows = None
+        self.data = None
+        self.results = None
+        self.headers = {
             'x-rapidapi-host': os.getenv('RAPID_API_HOST'),
             'x-rapidapi-key': os.getenv('RAPID_API_KEY')
             }
+        self.search()
 
-        response = requests.request("GET", url, headers=headers, params=querystring)
+    def search(self):
+        response = requests.request("GET", self.url,
+                                    headers=self.headers,
+                                    params=self.querystring)
         if response.status_code == 200:
             self.data = json.loads(response.text)
             self.results = [{**result} for result in self.data['results']]
@@ -70,3 +76,4 @@ class MediaClient:
 if __name__ == '__main__':
     keywords = {'content_type': 'movie', 'keywords' : ['invention', 'of', 'lying']}
     mymovie = MediaClient(**keywords)
+

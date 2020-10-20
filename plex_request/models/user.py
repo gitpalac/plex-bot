@@ -8,7 +8,7 @@ class UserMessage:
         self.content = message['content']
         self.author_id = message['author']['id']
         self.author_name = message['author']['name']
-        self.hasUrl = self.content.find('https://') == -1
+        self.hasUrl = self.content.find('https://') != -1
 
     def append_content(self, content):
         self.content = self.content + ' ' + content

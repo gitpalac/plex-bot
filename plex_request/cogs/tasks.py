@@ -38,7 +38,7 @@ class Task(commands.Cog):
                 msg = json.loads(msg['Body'])
                 msg = json.loads(msg['Records'][0]['Sns']['Message'], encoding='utf-8')
                 title = unicodedata.normalize('NFD', msg['title']).encode('ascii', 'ignore').decode("utf-8")
-                logging.info(f"Searching for {title + ' ' + str(msg['year'])}")
+                logging.info(f"Searching for {msg['title'] + ' ' + str(msg['year'])}")
                 pirate = parrot.PirateClient()
                 pirate.search(title + ' ' + str(msg['year']))
                 try:
@@ -67,7 +67,7 @@ class Task(commands.Cog):
                 requestor = self.bot.get_user(msg['created_by'])
                 await self.bot.get_channel(self.updates_channel_id) \
                     .send(f"""Sorry {requestor.mention}, but I was not able to download the title "{msg['title']}" because {reason}.. 😢""")
-                logging.error(f'Issue downloading {title} from queue --{e}')
+                logging.error(f"Issue downloading {msg['title']} from queue --{e}")
                 continue
 
 
